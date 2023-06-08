@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         setTimeout(() => {
             lock = false
-        }, 300)
+        }, 800)
     })
 
     function toggleMenu() {
@@ -57,4 +57,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
         document.body.style.paddingRight = scrollWidth + 'px'
     }
+
+
+    const mainSlider = new Swiper('.main-slider__body', {
+        speed: 1000,
+        navigation: {
+            nextEl: document.querySelector('.controls-main-slider__button-next'),
+            prevEl: document.querySelector('.controls-main-slider__button-prev'),
+        },
+        pagination: {
+            el: '.controls-main-slider__dots',
+            type: 'bullets',
+            clickable: true
+        },
+    })
+
+
 })

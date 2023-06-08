@@ -143,10 +143,6 @@ img {
   color: #fff;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,7 +442,6 @@ textarea.input {
 
 .slide-main-slider {
   position: relative;
-  min-height: 590px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,7 +479,7 @@ textarea.input {
 
 .slide-main-slider__text {
   max-width: 520px;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .slide-main-slider__text img {
@@ -518,6 +513,7 @@ textarea.input {
 }
 
 .controls-main-slider {
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -528,6 +524,51 @@ textarea.input {
 .controls-main-slider__container {
   position: relative;
   height: 100%;
+}
+
+.controls-main-slider__button-prev {
+  pointer-events: auto;
+}
+
+.controls-main-slider__button-next {
+  pointer-events: auto;
+}
+
+.controls-main-slider__dots {
+  position: absolute;
+  pointer-events: auto;
+  bottom: 52px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dots .swiper-pagination-bullet {
+  margin: 0 4px;
+  cursor: pointer;
+  width: 10px;
+  height: 5px;
+  border-radius: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: rgba(217, 217, 217, 0.17);
+}
+
+.dots .swiper-pagination-bullet-active {
+  background: #fff;
+  width: 19px;
 }
 
 .footer {
@@ -701,6 +742,8 @@ textarea.input {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .button-prev svg,
@@ -721,6 +764,57 @@ textarea.input {
 
 .button-next {
   right: -26px;
+}
+
+.button-prev.swiper-button-disabled,
+.button-next.swiper-button-disabled {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.swiper-build {
+  overflow: hidden;
+}
+
+.swiper-build .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-build .swiper-slide {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-build.swiper-container-multirow-column > .swiper-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.swiper-build.swiper-container-autoheight .swiper-slide {
+  height: auto;
+}
+
+.swiper-build.swiper-container-autoheight .swiper-wrapper {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-transition-property: height, -webkit-transform;
+  transition-property: height, -webkit-transform;
+  transition-property: transform, height;
+  transition-property: transform, height, -webkit-transform;
 }
 
 @media (min-width: 767.98px) {
@@ -799,6 +893,23 @@ textarea.input {
     transition: all 0.3s ease 0s;
   }
 
+  .slide-main-slider {
+    min-height: 590px;
+  }
+
+  .slide-main-slider::before {
+    z-index: 3;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 256px;
+    background: url("../images/intro-background.png") 0 0 no-repeat;
+    background-size: cover;
+  }
+
   .footer__top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -836,6 +947,10 @@ textarea.input {
 
   .menu__link {
     font-size: 15px;
+  }
+
+  .slide-main-slider__text {
+    max-width: calc(222px + 298 * ((100vw - 320px) / 952));
   }
 
   .footer {
@@ -948,8 +1063,8 @@ textarea.input {
     position: fixed;
     top: -100%;
     left: 0;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.8s ease-in 0s;
+    transition: all 0.8s ease-in 0s;
     width: 100%;
     height: 100%;
     background: #fff;
@@ -1000,12 +1115,76 @@ textarea.input {
     display: inline-block;
   }
 
+  .slide-main-slider {
+    min-height: 700px;
+  }
+
+  .slide-main-slider {
+    text-align: center;
+  }
+
+  .slide-main-slider::before {
+    z-index: 3;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 590px;
+    background: linear-gradient(356.08deg, #000000 3.22%, rgba(0, 0, 0, 0) 36.62%);
+  }
+
+  .slide-main-slider::after {
+    z-index: 3;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    background: #000;
+  }
+
+  .slide-main-slider__image {
+    height: 590px;
+  }
+
   .slide-main-slider__image {
     display: none;
   }
 
   .slide-main-slider__image_adaptive {
     display: block;
+  }
+
+  .slide-main-slider__container {
+    min-height: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    z-index: 4;
+    padding-bottom: 32px;
+  }
+
+  .controls-main-slider__button-prev {
+    display: none;
+  }
+
+  .controls-main-slider__button-next {
+    display: none;
+  }
+
+  .controls-main-slider__dots {
+    bottom: 110px;
   }
 
   .footer__logo {
@@ -1015,6 +1194,24 @@ textarea.input {
 
   .footer__menu {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 991.98px) and (max-width: 1272px) {
+  .slide-main-slider {
+    min-height: calc(430px + 270 * ((100vw - 320px) / 952));
+  }
+
+  .slide-main-slider::before {
+    height: calc(320px + 270 * ((100vw - 320px) / 952));
+  }
+
+  .slide-main-slider__image {
+    height: calc(320px + 270 * ((100vw - 320px) / 952));
+  }
+
+  .slide-main-slider__container {
+    min-height: calc(430px + 270 * ((100vw - 320px) / 952));
   }
 }
 
@@ -1037,6 +1234,10 @@ textarea.input {
 }
 
 @media (min-width: 991.98px) and (max-width: 1272px) {
+  .slide-main-slider {
+    min-height: calc(320px + 270 * ((100vw - 320px) / 952));
+  }
+
   .menu-footer {
     padding-left: calc(1px + 172 * ((100vw - 320px) / 952));
   }
