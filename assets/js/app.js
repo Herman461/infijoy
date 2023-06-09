@@ -39,6 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
         lock = true
 
         toggleMenu()
+        document.querySelector('.menu__content').setAttribute('hidden', '')
+        setTimeout(function () {
+
+            slideDown(document.querySelector('.menu__content'), 700)
+        }, 300)
 
         setTimeout(() => {
             lock = false
@@ -61,10 +66,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const mainSlider = new Swiper('.main-slider__body', {
         speed: 1000,
-        navigation: {
-            nextEl: document.querySelector('.controls-main-slider__button-next'),
-            prevEl: document.querySelector('.controls-main-slider__button-prev'),
-        },
+        // navigation: {
+        //     nextEl: document.querySelector('.controls-main-slider__button-next'),
+        //     prevEl: document.querySelector('.controls-main-slider__button-prev'),
+        // },
         pagination: {
             el: '.controls-main-slider__dots',
             type: 'bullets',

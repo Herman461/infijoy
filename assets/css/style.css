@@ -479,7 +479,7 @@ textarea.input {
 
 .slide-main-slider__text {
   max-width: 520px;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 
 .slide-main-slider__text img {
@@ -703,6 +703,19 @@ textarea.input {
   background: linear-gradient(98.84deg, #6135CA 0%, #4561D8 126.73%);
 }
 
+.button_gradient::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), #5050D3;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #5050D3;
+}
+
 .button_stroke {
   font-weight: 600;
   border: 1px solid #4561D8;
@@ -712,6 +725,8 @@ textarea.input {
 .button_white {
   background: #FFFFFF;
   border-radius: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .button_white span {
@@ -910,6 +925,10 @@ textarea.input {
     background-size: cover;
   }
 
+  .slide-main-slider__button {
+    margin-right: 33px;
+  }
+
   .footer__top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1063,8 +1082,8 @@ textarea.input {
     position: fixed;
     top: -100%;
     left: 0;
-    -webkit-transition: all 0.8s ease-in 0s;
-    transition: all 0.8s ease-in 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
     width: 100%;
     height: 100%;
     background: #fff;
@@ -1089,6 +1108,8 @@ textarea.input {
     top: 0;
     opacity: 1;
     visibility: visible;
+    -webkit-transition: opacity 0.4s ease 0s;
+    transition: opacity 0.4s ease 0s;
   }
 
   .menu__content {
@@ -1143,12 +1164,13 @@ textarea.input {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 110px;
+    height: 112px;
     background: #000;
   }
 
   .slide-main-slider__image {
     height: 590px;
+    top: -2px;
   }
 
   .slide-main-slider__image {
@@ -1173,6 +1195,10 @@ textarea.input {
     justify-content: flex-end;
     z-index: 4;
     padding-bottom: 32px;
+  }
+
+  .slide-main-slider__text {
+    margin-bottom: 55px;
   }
 
   .controls-main-slider__button-prev {
@@ -1252,5 +1278,25 @@ textarea.input {
 
   .languages__head:hover svg {
     color: #181F3E;
+  }
+
+  .button_gradient:hover::after {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  .button_gradient:hover::before {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .button_stroke:hover {
+    background: #F1F3FA;
+  }
+
+  .button_white:hover {
+    background: #F1F3FA;
   }
 }
