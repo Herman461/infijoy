@@ -103,7 +103,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 new Swiper(slider, {
                     speed: 1000,
                     spaceBetween: 10,
-                    loop: true,
                     navigation: {
                         nextEl: slider.closest('.base-slider').querySelector('.base-slider__button-next'),
                         prevEl: slider.closest('.base-slider').querySelector('.base-slider__button-prev'),

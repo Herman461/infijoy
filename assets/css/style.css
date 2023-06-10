@@ -127,10 +127,12 @@ body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   color: #fff;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 html {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 img {
@@ -978,6 +980,10 @@ textarea.input {
 }
 
 @media (min-width: 767.98px) {
+  .menu-footer_mobile {
+    display: none !important;
+  }
+
   .menu-footer {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
@@ -1423,6 +1429,10 @@ textarea.input {
 }
 
 @media (max-width: 767.98px) {
+  .menu-footer_desktop {
+    display: none !important;
+  }
+
   .menu-footer__list {
     margin-bottom: 40px;
   }
