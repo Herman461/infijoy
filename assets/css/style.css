@@ -1429,6 +1429,10 @@ textarea.input {
 }
 
 @media (max-width: 767.98px) {
+  .footer__bottom {
+    padding-top: 20px;
+  }
+
   .menu-footer_desktop {
     display: none !important;
   }
