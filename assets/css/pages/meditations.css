@@ -321,7 +321,6 @@
 
 .row {
   margin: 0 -12px;
-  padding-top: 70px;
   padding-bottom: 240px;
 }
 
@@ -333,6 +332,15 @@
 .row__block {
   min-height: 345px !important;
   padding: 30px !important;
+}
+
+.page__title {
+  padding-top: 70px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  color: #181F3E;
+  margin-bottom: 24px;
 }
 
 @media (min-width: 480.98px) {
@@ -477,11 +485,19 @@
   }
 
   .row {
+    padding-bottom: calc(100px + 140 * ((100vw - 320px) / 952));
+  }
+
+  .page__title {
     padding-top: calc(40px + 30 * ((100vw - 320px) / 952));
   }
 
-  .row {
-    padding-bottom: calc(100px + 140 * ((100vw - 320px) / 952));
+  .page__title {
+    font-size: calc(20px + 12 * ((100vw - 320px) / 952));
+  }
+
+  .page__title {
+    margin-bottom: calc(20px + 4 * ((100vw - 320px) / 952));
   }
 }
 
@@ -562,5 +578,9 @@
 @media (max-width: 767.98px) {
   .block__label {
     min-height: 24px;
+  }
+
+  .page__title {
+    font-weight: 700;
   }
 }
