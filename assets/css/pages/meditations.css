@@ -36,13 +36,17 @@
   position: relative;
 }
 
+.meditations-main-slider__audio .controls {
+  margin-top: 20px;
+}
+
 .meditations-main-slider__name {
   font-weight: 500;
   font-size: 14px;
   line-height: 135%;
   position: absolute;
   left: 101px;
-  top: 20px;
+  top: 30px;
 }
 
 .meditations-main-slider__button {
