@@ -1,0 +1,504 @@
+.main-slider {
+  margin-bottom: 64px;
+}
+
+.meditations-main-slider {
+  position: relative;
+  z-index: 4;
+}
+
+.meditations-main-slider__content {
+  max-width: 600px;
+}
+
+.meditations-main-slider__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 135%;
+  margin-bottom: 12px;
+}
+
+.meditations-main-slider__text {
+  margin-bottom: 30px;
+  max-width: 574px;
+}
+
+.meditations-main-slider__text p {
+  font-size: 14px;
+  line-height: 135%;
+  letter-spacing: 0.01em;
+}
+
+.meditations-main-slider__audio {
+  border-radius: 20px 20px 0px 0px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 22px 30px 28px;
+  position: relative;
+}
+
+.meditations-main-slider__name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 135%;
+  position: absolute;
+  left: 101px;
+  top: 20px;
+}
+
+.meditations-main-slider__button {
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.slide-main-slider {
+  display: block !important;
+}
+
+.circle {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 390px;
+  width: 390px;
+  border-radius: 50%;
+  opacity: 0.1;
+  border: 1px solid #FFFFFF;
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 440px;
+  width: 440px;
+  border-radius: 50%;
+  opacity: 0.1;
+  border: 1px solid #FFFFFF;
+}
+
+.circle img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 330px;
+  width: 330px;
+  border-radius: 50%;
+}
+
+.controls-main-slider__dots {
+  display: none;
+}
+
+.controls-main-slider__button-prev {
+  width: 68px;
+  height: 68px;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.controls-main-slider__button-next {
+  width: 68px;
+  height: 68px;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.block {
+  min-height: 345px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  position: relative;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.block::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(1deg, #000000 8.01%, rgba(0, 0, 0, 0) 72.36%);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.block__image {
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.block__image img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.block__label {
+  position: relative;
+  z-index: 3;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 28px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 42px;
+  padding: 2px 12px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.block__content {
+  position: relative;
+  z-index: 3;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.block__title {
+  line-height: 135%;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.block__title:last-child {
+  margin: 0;
+}
+
+.block__description {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.play-pause-btn {
+  width: 57px;
+  height: 57px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(98.84deg, #6135CA 0%, #4561D8 126.73%);
+}
+
+.play-pause-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.play-pause-btn path {
+  fill: #fff !important;
+}
+
+.green-audio-player {
+  width: auto;
+  height: auto;
+  min-width: 0;
+}
+
+.controls__current-time,
+.controls__total-time {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.green-audio-player .controls .controls__slider {
+  height: 5px;
+  border-radius: 30px;
+  background: #FFFFFF;
+}
+
+.green-audio-player .controls .controls__slider .controls__progress .progress__pin {
+  width: 13px;
+  height: 13px;
+  background: #4561D8;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  right: -6.5px;
+  top: -5px;
+}
+
+.green-audio-player .slider .gap-progress {
+  background: #4F52D4;
+  border-radius: 30px;
+}
+
+.volume,
+.loading {
+  display: none;
+}
+
+.green-audio-player .controls .controls__slider {
+  margin: 0 13px;
+}
+
+.main-slider__slide {
+  padding-bottom: 108px;
+}
+
+@media (min-width: 991.98px) {
+  .meditations-main-slider::before {
+    -webkit-filter: blur(32px);
+    filter: blur(32px);
+  }
+
+  .meditations-main-slider {
+    min-height: 590px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .meditations-main-slider__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .meditations-main-slider__circle {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 400px;
+    flex: 0 0 400px;
+    margin-right: 100px;
+  }
+
+  .meditations-main-slider__content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+
+  .controls-main-slider__button-prev svg {
+    width: 15px;
+    height: 26px;
+  }
+}
+
+@media (min-width: 1272px) {
+  .controls-main-slider__button-next svg {
+    width: 15px;
+    height: 26px;
+  }
+}
+
+@media (max-width: 1272px) {
+  .circle::before {
+    height: calc(260px + 130 * ((100vw - 320px) / 952));
+  }
+
+  .circle::before {
+    width: calc(260px + 130 * ((100vw - 320px) / 952));
+  }
+
+  .circle::after {
+    height: calc(290px + 150 * ((100vw - 320px) / 952));
+  }
+
+  .circle::after {
+    width: calc(290px + 150 * ((100vw - 320px) / 952));
+  }
+
+  .circle img {
+    height: calc(220px + 110 * ((100vw - 320px) / 952));
+  }
+
+  .circle img {
+    width: calc(220px + 110 * ((100vw - 320px) / 952));
+  }
+
+  .controls-main-slider__button-prev {
+    width: 42px;
+    height: 42px;
+    left: 2px;
+  }
+
+  .controls-main-slider__button-prev svg {
+    width: 10px;
+    height: 16px;
+  }
+
+  .controls-main-slider__button-next {
+    width: 42px;
+    height: 42px;
+    right: 2px;
+  }
+
+  .controls-main-slider__button-next svg {
+    width: 10px;
+    height: 16px;
+  }
+
+  .block {
+    min-height: calc(195px + 150 * ((100vw - 320px) / 952));
+  }
+
+  .block {
+    padding: calc(10px + 20 * ((100vw - 320px) / 952));
+  }
+
+  .block__label {
+    font-size: calc(10px + 2 * ((100vw - 320px) / 952));
+  }
+
+  .block__title {
+    font-size: calc(13px + 3 * ((100vw - 320px) / 952));
+  }
+}
+
+@media (max-width: 991.98px) {
+  .meditations-main-slider {
+    padding-top: 70px;
+  }
+
+  .meditations-main-slider__container {
+    max-width: 600px;
+  }
+
+  .meditations-main-slider__circle {
+    margin-bottom: 60px;
+  }
+
+  .meditations-main-slider__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 102%;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+  }
+
+  .meditations-main-slider__audio {
+    padding: 22px 15px 28px;
+  }
+
+  .meditations-main-slider__name {
+    left: 87px;
+  }
+
+  .slide-main-slider__image {
+    height: 100%;
+    top: 0;
+  }
+
+  .slide-main-slider::before,
+  .slide-main-slider::after {
+    display: none;
+  }
+
+  .controls-main-slider__button-prev {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    left: calc(50% - 30px);
+    bottom: 36px;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: auto;
+  }
+
+  .controls-main-slider__button-next {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    left: calc(50% + 30px);
+    right: auto;
+    bottom: 36px;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: auto;
+  }
+}
+
+@media (max-width: 991.98px) and (max-width: 1272px) {
+  .meditations-main-slider {
+    padding-top: calc(55px + 15 * ((100vw - 320px) / 952));
+  }
+
+  .meditations-main-slider__circle {
+    margin-bottom: calc(40px + 20 * ((100vw - 320px) / 952));
+  }
+}
+
+@media (max-width: 767.98px) {
+  .block__label {
+    min-height: 24px;
+  }
+}
