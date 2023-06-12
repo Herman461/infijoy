@@ -408,23 +408,23 @@ window.addEventListener('click', function(e) {
 		const closeButton = e.target.closest('[data-modal-close]')
 		closeButton.closest('.modal').classList.remove('active')
 
-
+		document.body.classList.remove('lock')
 		setTimeout(() => {
-			document.body.classList.remove('lock')
+
 			document.body.style.paddingRight = 0
 		}, 300)
 	}
 
-	if (e.target.closest('.modal')) {
-		if (!e.target.closest('.modal__content')) {
-			e.target.closest('.modal').classList.remove('active')
-
-			setTimeout(() => {
-				document.body.classList.remove('lock')
-				document.body.style.paddingRight = 0
-			}, 400)
-		}
-	}
+	// if (e.target.closest('.modal')) {
+	// 	if (!e.target.closest('.modal__content')) {
+	// 		e.target.closest('.modal').classList.remove('active')
+	//
+	// 		setTimeout(() => {
+	// 			document.body.classList.remove('lock')
+	// 			document.body.style.paddingRight = 0
+	// 		}, 400)
+	// 	}
+	// }
 })
 
 

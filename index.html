@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css?_v=20230610223527">
-    <title>Courses</title>
+    <link rel="stylesheet" href="assets/css/style.css?_v=20230612183024">
+    <link rel="stylesheet" href="assets/css/pages/courses.css?_v=20230612183024">
+    <link rel="stylesheet" href="assets/css/plugins/video-js.min.css?_v=20230612183024">
+    <title>Course</title>
 </head>
 
 <body>
-
     <div class="wrapper">
         <header class="header">
             <div class="header__container container">
@@ -97,11 +98,12 @@
                                 <div class="slide-main-slider__text">
                                     <img src="assets/images/texts/01.png" alt="">
                                 </div>
-                                <a href="" class="slide-main-slider__button button button_white">
+                                <a href="" data-modal-link="modal-video" class="slide-main-slider__button button button_white">
                                     <svg>
                                         <use xlink:href="assets/images/icons/icons.svg#play"></use>
                                     </svg>
                                     <span>Watch Now</span>
+                                    <span>Watch Trailer</span>
                                 </a>
                             </div>
 
@@ -119,11 +121,12 @@
                                 <div class="slide-main-slider__text">
                                     <img src="assets/images/texts/01.png" alt="">
                                 </div>
-                                <a href="" class="slide-main-slider__button button button_white">
+                                <a href="" data-modal-link="modal-video" class="slide-main-slider__button button button_white">
                                     <svg>
                                         <use xlink:href="assets/images/icons/icons.svg#play"></use>
                                     </svg>
                                     <span>Watch Now</span>
+                                    <span>Watch Trailer</span>
                                 </a>
                             </div>
 
@@ -141,11 +144,12 @@
                                 <div class="slide-main-slider__text">
                                     <img src="assets/images/texts/01.png" alt="">
                                 </div>
-                                <a href="" class="slide-main-slider__button button button_white">
+                                <a href="" data-modal-link="modal-video" class="slide-main-slider__button button button_white">
                                     <svg>
                                         <use xlink:href="assets/images/icons/icons.svg#play"></use>
                                     </svg>
                                     <span>Watch Now</span>
+                                    <span>Watch Trailer</span>
                                 </a>
                             </div>
 
@@ -163,11 +167,12 @@
                                 <div class="slide-main-slider__text">
                                     <img src="assets/images/texts/01.png" alt="">
                                 </div>
-                                <a href="" class="slide-main-slider__button button button_white">
+                                <a href="" data-modal-link="modal-video" class="slide-main-slider__button button button_white">
                                     <svg>
                                         <use xlink:href="assets/images/icons/icons.svg#play"></use>
                                     </svg>
                                     <span>Watch Now</span>
+                                    <span>Watch Trailer</span>
                                 </a>
                             </div>
 
@@ -189,6 +194,386 @@
                         <div class="controls-main-slider__dots dots"></div>
                     </div>
 
+                </div>
+            </div>
+            <div class="base-slider">
+                <div class="base-slider__container container">
+                    <div class="base-slider__top top">
+                        <h2 class="top__title">Infijoy Most Recommended</h2>
+                        <a href="./courses-listing.html" class="top__more">View All</a>
+                    </div>
+                    <div class="base-slider__main">
+                        <div class="base-slider__body swiper">
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/01.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/02.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/03.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/04.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/05.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="base-slider__button-prev button-prev">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                        <div class="base-slider__button-next button-next">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="base-slider base-slider_big base-slider_popular">
+                <div class="base-slider__container container">
+                    <div class="base-slider__top top">
+                        <h2 class="top__title">Top 10 Most Popular</h2>
+                        <a href="./courses-listing.html" class="top__more">View All</a>
+                    </div>
+                    <div class="base-slider__main">
+                        <div class="base-slider__body base-slider__body_popular base-slider__body_big swiper">
+                            <div class="base-slider__block base-slider__block_orange popular-block">
+                                <div class="popular-block__image">
+                                    <img src="assets/images/popular/bg_1.jpg" alt="">
+                                </div>
+                                <div class="popular-block__text">
+                                    <img src="assets/images/popular/text_1.png" alt="">
+                                </div>
+                                <div class="popular-block__content">
+                                    <div class="popular-block__avatar">
+                                        <img src="assets/images/avatars/01.png" alt="">
+                                    </div>
+                                    <div class="popular-block__info">
+                                        <div class="popular-block__title">The Choice to Be Happy</div>
+                                        <div class="popular-block__name">Henrique Bueno</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="base-slider__block base-slider__block_blue popular-block">
+                                <div class="popular-block__image">
+                                    <img src="assets/images/popular/bg_2.jpg" alt="">
+                                </div>
+                                <div class="popular-block__text">
+                                    <img src="assets/images/popular/text_2.png" alt="">
+                                </div>
+                                <div class="popular-block__content">
+                                    <div class="popular-block__avatar">
+                                        <img src="assets/images/avatars/02.png" alt="">
+                                    </div>
+                                    <div class="popular-block__info">
+                                        <div class="popular-block__title">The Choice to Be Happy</div>
+                                        <div class="popular-block__name">Henrique Bueno</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="base-slider__button-prev button-prev">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                        <div class="base-slider__button-next button-next">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                        <div class="base-slider__dots dots"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="base-slider">
+                <div class="base-slider__container container">
+                    <div class="base-slider__top top">
+                        <h2 class="top__title">Psychology</h2>
+                        <a href="./courses-listing.html" class="top__more">View All</a>
+                    </div>
+                    <div class="base-slider__main">
+                        <div class="base-slider__body swiper">
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/01.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/02.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/03.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/04.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/05.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="base-slider__button-prev button-prev">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                        <div class="base-slider__button-next button-next">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="base-slider">
+                <div class="base-slider__container container">
+                    <div class="base-slider__top top">
+                        <h2 class="top__title">well-being</h2>
+                        <a href="./courses-listing.html" class="top__more">View All</a>
+                    </div>
+                    <div class="base-slider__main">
+                        <div class="base-slider__body swiper">
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/01.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/02.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/03.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/04.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/05.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="base-slider__button-prev button-prev">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                        <div class="base-slider__button-next button-next">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="base-slider base-slider_trending">
+                <div class="base-slider__container container">
+                    <div class="base-slider__top top">
+                        <h2 class="top__title">Trending Courses</h2>
+                        <a href="./courses-listing.html" class="top__more">View All</a>
+                    </div>
+                    <div class="base-slider__main">
+                        <div class="base-slider__body base-slider__body_trending swiper">
+                            <div class="base-slider__block trending-block">
+                                <div class="trending-block__image">
+                                    <img src="assets/images/trending/01.jpg" alt="">
+                                </div>
+                                <div class="trending-block__content">
+                                    <div class="trending-block__avatar">
+                                        <img src="assets/images/avatars/03.png" alt="">
+                                    </div>
+                                    <div class="trending-block__name">Ty Tashiro</div>
+                                </div>
+                            </div>
+                            <div class="base-slider__block trending-block">
+                                <div class="trending-block__image">
+                                    <img src="assets/images/trending/02.jpg" alt="">
+                                </div>
+                                <div class="trending-block__content">
+                                    <div class="trending-block__avatar">
+                                        <img src="assets/images/avatars/04.png" alt="">
+                                    </div>
+                                    <div class="trending-block__name">Ty Tashiro</div>
+                                </div>
+                            </div>
+                            <div class="base-slider__block trending-block">
+                                <div class="trending-block__image">
+                                    <img src="assets/images/trending/03.jpg" alt="">
+                                </div>
+                                <div class="trending-block__content">
+                                    <div class="trending-block__avatar">
+                                        <img src="assets/images/avatars/05.png" alt="">
+                                    </div>
+                                    <div class="trending-block__name">Ty Tashiro</div>
+                                </div>
+                            </div>
+                            <div class="base-slider__block trending-block">
+                                <div class="trending-block__image">
+                                    <img src="assets/images/trending/04.jpg" alt="">
+                                </div>
+                                <div class="trending-block__content">
+                                    <div class="trending-block__avatar">
+                                        <img src="assets/images/avatars/06.png" alt="">
+                                    </div>
+                                    <div class="trending-block__name">Ty Tashiro</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="base-slider__dots dots"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-slider main-slider_big">
+                <div class="main-slider__body swiper">
+                    <div class="main-slider__slide slide-main-slider">
+                        <div class="slide-main-slider__image">
+                            <img src="assets/images/intro_2.jpg" alt="">
+                        </div>
+                        <div class="slide-main-slider__image slide-main-slider__image_adaptive">
+                            <img src="assets/images/intro_adaptive_2.jpg" alt="">
+                        </div>
+                        <div class="slide-main-slider__container container">
+                            <div class="slide-main-slider__content">
+                                <div class="slide-main-slider__text">
+                                    <img src="assets/images/texts/02.png" alt="">
+                                </div>
+                                <a href="" data-modal-link="modal-video" class="slide-main-slider__button button button_white">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#play"></use>
+                                    </svg>
+                                    <span>Watch Now</span>
+                                    <span>Watch Trailer</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="main-slider__controls controls-main-slider">
+                    <div class="controls-main-slider__container container">
+                        <div class="controls-main-slider__button-prev button-prev">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                        <div class="controls-main-slider__button-next button-next">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                        <div class="controls-main-slider__dots dots"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="base-slider">
+                <div class="base-slider__container container">
+                    <div class="base-slider__top top">
+                        <h2 class="top__title">Spiritual Growth</h2>
+                        <a href="./courses-listing.html" class="top__more">View All</a>
+                    </div>
+                    <div class="base-slider__main">
+                        <div class="base-slider__body swiper">
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/01.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/02.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/03.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/04.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/05.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="base-slider__button-prev button-prev">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                        <div class="base-slider__button-next button-next">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="base-slider">
+                <div class="base-slider__container container">
+                    <div class="base-slider__top top">
+                        <h2 class="top__title">Spirituality</h2>
+                        <a href="./courses-listing.html" class="top__more">View All</a>
+                    </div>
+                    <div class="base-slider__main">
+                        <div class="base-slider__body swiper">
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/01.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/02.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/03.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/04.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/05.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="base-slider__button-prev button-prev">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                        <div class="base-slider__button-next button-next">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="base-slider">
+                <div class="base-slider__container container">
+                    <div class="base-slider__top top">
+                        <h2 class="top__title">Business</h2>
+                        <a href="./courses-listing.html" class="top__more">View All</a>
+                    </div>
+                    <div class="base-slider__main">
+                        <div class="base-slider__body swiper">
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/01.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/02.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/03.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/04.jpg" alt="">
+                            </div>
+                            <div class="base-slider__block image">
+                                <img src="assets/images/people/05.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="base-slider__button-prev button-prev">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                        <div class="base-slider__button-next button-next">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -237,7 +622,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer__menu menu-footer menu-footer_desktop">
+                    <div class="footer__menu menu-footer">
                         <ul class="menu-footer__list">
                             <li class="menu-footer__item">
                                 <a href="" class="menu-footer__link">About</a>
@@ -305,78 +690,6 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer__menu menu-footer menu-footer_mobile">
-                        <ul class="menu-footer__list">
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">About</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Courses</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Meditations</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">FAQs</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Resources</a>
-                            </li>
-                        </ul>
-                        <ul class="menu-footer__list">
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Positive Psychology</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Thriving at Work</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Mental Health</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Alternative Healing</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Self-Care</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Relationships</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Rest and Recovery</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Mindfulness</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Mental Strength</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Spirituality</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Physical Health</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Nutrition</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Relationships</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Youth and Family</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Thought Leaders</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Emotional Intelligence</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a href="" class="menu-footer__link">Philosophy</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
                 <div class="footer__bottom bottom-footer">
                     <ul class="bottom-footer__menu menu-bottom-footer">
@@ -399,9 +712,46 @@
         </footer>
 
     </div>
-    <script src="assets/js/script.js?_v=20230610223527"></script>
-    <script src="assets/js/plugins/swiper-bundle.min.js?_v=20230610223527"></script>
-    <script src="assets/js/app.js?_v=20230610223527"></script>
+    <div id="modal-video" class="modal">
+        <a href="" data-modal-link="modal-video" data-modal-close="" class="modal__close">
+            <svg>
+                <use xlink:href="assets/images/icons/icons.svg#close"></use>
+            </svg>
+        </a>
+        <div class="modal__content">
+
+            <div class="video-modal">
+                <div class="video-modal__top">
+                    <div class="video-modal__info">
+                        <div class="video-modal__title">The Choice to Be Happy</div>
+                        <div class="video-modal__author">Henrique Bueno</div>
+                    </div>
+                    <a href="" data-modal-link="modal-video" class="video-modal__share">
+                        Share
+                        <svg>
+                            <use xlink:href="assets/images/icons/icons.svg#share"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="video-modal__body">
+                    <video id="video-1" class="video-js" controls preload="metadata">
+                        <source src="assets/video/01.webm" type="video/webm" />
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                    </video>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/js/script.js?_v=20230612134609"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js?_v=20230612134609"></script>
+    <script src="assets/js/plugins/video.min.js?_v=20230612183024"></script>
+    <script src="assets/js/app.js?_v=20230612134609"></script>
 </body>
 
 </html>

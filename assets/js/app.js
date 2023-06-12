@@ -86,11 +86,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
+    if (document.querySelectorAll('.meditations-main-slider__audio').length > 0) {
+        GreenAudioPlayer.init({
+            selector: '.meditations-main-slider__audio',
+            stopOthersOnPlay: true
+        });
+    }
 
-    GreenAudioPlayer.init({
-        selector: '.meditations-main-slider__audio',
-        stopOthersOnPlay: true
-    });
 
 
     const baseSliders = document.querySelectorAll('.base-slider__body')
@@ -99,6 +101,59 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let index = 0; index < baseSliders.length; index++) {
             const slider = baseSliders[index]
 
+            if (slider.classList.contains('base-slider__body_trending')) {
+                new Swiper(slider, {
+                    speed: 1000,
+                    spaceBetween: 20,
+                    slidesPerView: 1,
+                    breakpoints: {
+                        991.98: {
+                            slidesPerView: 4,
+                            spaceBetween: 24,
+                        },
+                        767.98: {
+                            slidesPerView: 3,
+                            spaceBetween: 24,
+                        },
+                        490.98: {
+                            slidesPerView: 2,
+                        }
+                    },
+                    pagination: {
+                        el: slider.closest('.base-slider').querySelector('.base-slider__dots'),
+                        type: 'bullets',
+                        clickable: true
+                    },
+                })
+
+                continue;
+            }
+
+            if (slider.classList.contains('base-slider__body_popular')) {
+                new Swiper(slider, {
+                    speed: 1000,
+                    spaceBetween: 20,
+                    navigation: {
+                        nextEl: slider.closest('.base-slider').querySelector('.base-slider__button-next'),
+                        prevEl: slider.closest('.base-slider').querySelector('.base-slider__button-prev'),
+                    },
+                    slidesPerView: 1,
+                    breakpoints: {
+
+                        767.98: {
+                            slidesPerView: 1.7,
+                        },
+
+                    },
+                    pagination: {
+                        el: slider.closest('.base-slider').querySelector('.base-slider__dots'),
+                        type: 'bullets',
+                        clickable: true
+                    },
+                })
+
+                continue;
+            }
             if (slider.classList.contains('base-slider__body_big')) {
                 new Swiper(slider, {
                     speed: 1000,
@@ -145,4 +200,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
         }
     }
+
+
+    const player = videojs('video-1')
+    const timeEl = document.querySelector('.vjs-remaining-time')
+    player.on('timeupdate', function() {
+        let currentTime = player.currentTime().toFixed(0)
+        let duration = player.duration().toFixed(0)
+
+
+        if (currentTime < 10) {
+            currentTime = '0' + currentTime
+        }
+        if (currentTime < 60) {
+            currentTime = '0:' + currentTime
+        }
+
+        if (duration < 10) {
+            duration = '0' + duration
+        }
+        if (duration < 60) {
+            duration = '0:' + duration
+        }
+        timeEl.innerHTML = currentTime + ' / ' + duration
+
+    });
 })
