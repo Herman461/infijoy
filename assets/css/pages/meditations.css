@@ -137,6 +137,10 @@
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
+.main-slider_meditation .button-prev {
+  display: none !important;
+}
+
 .block {
   min-height: 345px;
   display: -webkit-box;
@@ -405,6 +409,11 @@
   .controls-main-slider__button-prev svg {
     width: 15px;
     height: 26px;
+  }
+
+  .main-slider_meditation .slide-main-slider::before {
+    height: 469px !important;
+    background: linear-gradient(7.25deg, #000000 7.03%, rgba(0, 0, 0, 0) 62.41%) !important;
   }
 
   .row__column {

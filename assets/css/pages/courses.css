@@ -36,6 +36,10 @@
   margin-bottom: 80px;
 }
 
+.main-slider .controls-main-slider__button-prev {
+  display: none;
+}
+
 .trending-block {
   display: -webkit-box;
   display: -ms-flexbox;
