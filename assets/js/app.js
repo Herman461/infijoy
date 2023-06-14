@@ -71,10 +71,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const mainSliders = document.querySelectorAll('.main-slider__body')
+
+
     if (mainSliders.length > 0) {
         for (let index = 0; index < mainSliders.length; index++) {
             const slider = mainSliders[index]
-
+            let wasSliderChanged = false
             new Swiper(slider, {
                 speed: 1000,
                 loop: true,
@@ -98,6 +100,12 @@ document.addEventListener('DOMContentLoaded', function() {
                                 GreenAudioPlayer.pausePlayer(audio)
                             }
 
+                        }
+
+                        if (!wasSliderChanged) {
+                            wasSliderChanged = true
+                        } else {
+                            slider.closest('.main-slider').classList.add('visible')
                         }
                     }
                 }

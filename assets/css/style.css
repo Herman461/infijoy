@@ -1348,6 +1348,12 @@ textarea.input {
   line-height: 140%;
 }
 
+.main-slider.visible .button-prev {
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+
 @media (min-width: 480.98px) {
   .video-modal__top {
     display: -webkit-box;
