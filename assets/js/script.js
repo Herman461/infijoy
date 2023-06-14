@@ -407,7 +407,10 @@ window.addEventListener('click', function(e) {
 	if (e.target.closest('[data-modal-close]')) {
 		const closeButton = e.target.closest('[data-modal-close]')
 		closeButton.closest('.modal').classList.remove('active')
-
+		if (closeButton.closest('.modal').querySelector('video')) {
+			closeButton.closest('.modal').querySelector('video').pause()
+		}
+		closeButton.closest('.modal').classList.remove('active')
 		document.body.classList.remove('lock')
 		setTimeout(() => {
 
