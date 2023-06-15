@@ -5,15 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css?_v=20230615033652">
-    <link rel="stylesheet" href="assets/css/style.css?_v=20230615033652">
-    <link rel="stylesheet" href="assets/css/pages/courses.css?_v=20230615033652">
-    <link rel="stylesheet" href="assets/css/plugins/video-js.min.css?_v=20230615033652">
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css?_v=20230615213822">
+    <link rel="stylesheet" href="assets/css/style.css?_v=20230615213822">
+    <link rel="stylesheet" href="assets/css/pages/courses.css?_v=20230615213822">
+    <link rel="stylesheet" href="assets/css/plugins/video-js.min.css?_v=20230615213822">
+    <style>
+        .preloader {
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            transition: all 0.3s ease 0s;
+        }
 
+        .preloader.hidden {
+            pointer-events: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
     <title>Course</title>
 </head>
 
 <body>
+    <div class="preloader"></div>
     <div class="wrapper">
         <header class="header">
             <div class="header__container container">
@@ -90,7 +108,7 @@
                 <div class="main-slider__body swiper">
                     <div class="main-slider__slide slide-main-slider">
                         <div class="slide-main-slider__image">
-                            <img src="assets/images/intro.jpg" alt="">
+                            <img src="assets/images/intro.png" alt="">
                         </div>
                         <div class="slide-main-slider__image slide-main-slider__image_adaptive">
                             <img src="assets/images/intro_adaptive.jpg" alt="">
@@ -113,7 +131,7 @@
                     </div>
                     <div class="main-slider__slide slide-main-slider">
                         <div class="slide-main-slider__image">
-                            <img src="assets/images/intro.jpg" alt="">
+                            <img src="assets/images/intro.png" alt="">
                         </div>
                         <div class="slide-main-slider__image slide-main-slider__image_adaptive">
                             <img src="assets/images/intro_adaptive.jpg" alt="">
@@ -136,7 +154,7 @@
                     </div>
                     <div class="main-slider__slide slide-main-slider">
                         <div class="slide-main-slider__image">
-                            <img src="assets/images/intro.jpg" alt="">
+                            <img src="assets/images/intro.png" alt="">
                         </div>
                         <div class="slide-main-slider__image slide-main-slider__image_adaptive">
                             <img src="assets/images/intro_adaptive.jpg" alt="">
@@ -159,7 +177,7 @@
                     </div>
                     <div class="main-slider__slide slide-main-slider">
                         <div class="slide-main-slider__image">
-                            <img src="assets/images/intro.jpg" alt="">
+                            <img src="assets/images/intro.png" alt="">
                         </div>
                         <div class="slide-main-slider__image slide-main-slider__image_adaptive">
                             <img src="assets/images/intro_adaptive.jpg" alt="">
@@ -201,7 +219,10 @@
             <div class="base-slider">
                 <div class="base-slider__container container">
                     <div class="base-slider__top top">
-                        <h2 class="top__title">Infijoy Most Recommended</h2>
+                        <h2 class="top__title top__title_diff">
+                            <span>Infijoy Most Recommended</span>
+                            <span>Most Recommended</span>
+                        </h2>
                         <a href="./courses-listing.html" class="top__more">View All</a>
                     </div>
                     <div class="base-slider__main">
@@ -240,6 +261,7 @@
                 <div class="base-slider__container container">
                     <div class="base-slider__top top">
                         <h2 class="top__title">Top 10 Most Popular</h2>
+                        <a href="./meditations-listing.html" class="top__more top__more_mobile">View All</a>
                     </div>
                     <div class="base-slider__main">
                         <div class="base-slider__body base-slider__body_popular base-slider__body_big swiper">
@@ -270,6 +292,23 @@
                                 <div class="popular-block__content">
                                     <div class="popular-block__avatar">
                                         <img src="assets/images/avatars/02.png" alt="">
+                                    </div>
+                                    <div class="popular-block__info">
+                                        <div class="popular-block__title">The Choice to Be Happy</div>
+                                        <div class="popular-block__name">Henrique Bueno</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="base-slider__block base-slider__block_orange popular-block">
+                                <div class="popular-block__image">
+                                    <img src="assets/images/popular/bg_1.jpg" alt="">
+                                </div>
+                                <div class="popular-block__text">
+                                    <img src="assets/images/popular/text_1.png" alt="">
+                                </div>
+                                <div class="popular-block__content">
+                                    <div class="popular-block__avatar">
+                                        <img src="assets/images/avatars/01.png" alt="">
                                     </div>
                                     <div class="popular-block__info">
                                         <div class="popular-block__title">The Choice to Be Happy</div>
@@ -332,7 +371,7 @@
             <div class="base-slider">
                 <div class="base-slider__container container">
                     <div class="base-slider__top top">
-                        <h2 class="top__title">well-being</h2>
+                        <h2 class="top__title">Well-being</h2>
                         <a href="./courses-listing.html" class="top__more">View All</a>
                     </div>
                     <div class="base-slider__main">
@@ -748,10 +787,16 @@
 
         </div>
     </div>
-    <script src="assets/js/script.js?_v=20230615033652"></script>
-    <script src="assets/js/plugins/swiper-bundle.min.js?_v=20230615033652"></script>
-    <script src="assets/js/plugins/video.min.js?_v=20230615033652"></script>
-    <script src="assets/js/app.js?_v=20230615033652"></script>
+    <script src="assets/js/script.js?_v=20230615213822"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js?_v=20230615213822"></script>
+    <script src="assets/js/plugins/video.min.js?_v=20230615213822"></script>
+    <script src="assets/js/app.js?_v=20230615213822"></script>
+    <script>
+    window.addEventListener('load', function() {
+        const preloader = document.querySelector('.preloader')
+        preloader.classList.add('hidden')
+    })
+</script>
 </body>
 
 </html>

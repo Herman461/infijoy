@@ -5,10 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css?_v=20230615033652">
-    <link rel="stylesheet" href="assets/css/pages/meditations.css?_v=20230615033652">
+    <link rel="stylesheet" href="assets/css/style.css?_v=20230615213822">
+    <link rel="stylesheet" href="assets/css/pages/meditations.css?_v=20230615213822">
+    <style>
+        .preloader {
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            transition: all 0.3s ease 0s;
+        }
+
+        .preloader.hidden {
+            pointer-events: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
     <title>Courses</title>
 </head>
+<div class="preloader"></div>
 <div class="wrapper">
     <header class="header">
         <div class="header__container container">
@@ -284,8 +303,14 @@
     </footer>
 
 </div>
-<script src="assets/js/script.js?_v=20230615033652"></script>
-<script src="assets/js/app.js?_v=20230615033652"></script>
+<script src="assets/js/script.js?_v=20230615213822"></script>
+<script src="assets/js/app.js?_v=20230615213822"></script>
+<script>
+    window.addEventListener('load', function() {
+        const preloader = document.querySelector('.preloader')
+        preloader.classList.add('hidden')
+    })
+</script>
 </body>
 
 </html>

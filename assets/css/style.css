@@ -1486,6 +1486,10 @@ textarea.input {
     transition: all 0.3s ease 0s;
   }
 
+  .top__more_mobile {
+    display: none;
+  }
+
   .slide-main-slider {
     min-height: 590px;
   }
