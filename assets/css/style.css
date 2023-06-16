@@ -2005,6 +2005,23 @@ textarea.input {
     height: 10px;
     background: #4561D8;
   }
+
+  .base-slider__main {
+    position: relative;
+  }
+
+  .base-slider__main::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    left: -16px;
+    width: 16px;
+    height: calc(100% + 10px);
+    z-index: 4;
+    background: #fff;
+  }
 }
 
 @media (max-width: 480.98px) {

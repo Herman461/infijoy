@@ -347,6 +347,10 @@
   margin-bottom: 24px;
 }
 
+.main-slider_offset {
+  margin-bottom: 70px;
+}
+
 @media (min-width: 480.98px) {
   .row {
     display: -webkit-box;
@@ -413,13 +417,18 @@
 
   .main-slider .slide-main-slider::before {
     height: 469px !important;
-    background: linear-gradient(7.25deg, #000000 7.03%, rgba(0, 0, 0, 0) 62.41%) !important;
+    background: url("../../images/meditation_bg.png") 0 0/cover no-repeat !important;
   }
 
   .row__column {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 25%;
     flex: 0 1 25%;
+  }
+
+  .main-slider_offset .slide-main-slider::before {
+    height: 254px !important;
+    background: url("../../images/grounding_bg.png") 0 0/cover no-repeat !important;
   }
 }
 
@@ -508,6 +517,10 @@
   .page__title {
     margin-bottom: calc(20px + 4 * ((100vw - 320px) / 952));
   }
+
+  .main-slider_offset {
+    margin-bottom: calc(36px + 34 * ((100vw - 320px) / 952));
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -577,6 +590,22 @@
     display: -webkit-inline-box !important;
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
+  }
+
+  .main-slider_offset .slide-main-slider::before {
+    content: "";
+    z-index: 3;
+    display: block !important;
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .main-slider_offset .slide-main-slider::before {
+    height: 93px !important;
+    background: url("../../images/grounding_bg_adaptive.png") 0 0/cover no-repeat !important;
   }
 }
 
