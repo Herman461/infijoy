@@ -1435,6 +1435,12 @@ textarea.input {
   .base-slider__dots {
     display: none;
   }
+
+  .row_col-2 .row__column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+  }
 }
 
 @media (min-width: 991.98px) {
@@ -1934,7 +1940,7 @@ textarea.input {
   }
 
   .menu-footer__list:nth-child(2) {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .bottom-footer__menu {
@@ -2021,6 +2027,12 @@ textarea.input {
     height: calc(100% + 10px);
     z-index: 4;
     background: #fff;
+  }
+
+  .row_col-2 .row__column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
   }
 }
 
