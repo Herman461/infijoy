@@ -326,7 +326,11 @@
 }
 
 .main-slider__slide {
-  padding-bottom: 108px;
+  padding-bottom: 35px;
+}
+
+.base-slider_big.visible .button-prev {
+  display: none !important;
 }
 
 .row {
