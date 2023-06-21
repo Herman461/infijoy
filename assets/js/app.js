@@ -109,15 +109,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 on: {
                     transitionEnd() {
 
-                        if (slider.closest('.main-slider') && slider.closest('.main-slider').classList.contains('main-slider_meditation')) {
-                            if (document.querySelector('.main-slider_meditation .swiper-slide-prev .play-pause-btn').getAttribute('aria-label') === 'Pause') {
-                                const audio = document.querySelector('.main-slider_meditation .swiper-slide-prev audio')
+                        if (slider.closest('.main-slider') && slider.closest('.main-slider').classList.contains('audio-slider')) {
+                            if (slider.closest('.audio-slider').querySelector('.swiper-slide-prev .play-pause-btn').getAttribute('aria-label') === 'Pause') {
+                                const audio = slider.closest('.audio-slider').querySelector('.swiper-slide-prev audio')
                                 GreenAudioPlayer.pausePlayer(audio)
 
                             }
 
-                            if (document.querySelector('.main-slider_meditation .swiper-slide-next .play-pause-btn').getAttribute('aria-label') === 'Pause') {
-                                const audio = document.querySelector('.main-slider_meditation .swiper-slide-next audio')
+                            if (slider.closest('.audio-slider').querySelector('.swiper-slide-next .play-pause-btn').getAttribute('aria-label') === 'Pause') {
+                                const audio = slider.closest('.audio-slider').querySelector('.swiper-slide-next audio')
                                 GreenAudioPlayer.pausePlayer(audio)
 
                             }

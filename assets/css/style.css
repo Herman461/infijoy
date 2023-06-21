@@ -1378,6 +1378,11 @@ textarea.input {
   user-select: none;
 }
 
+.button-prev svg,
+.button-next svg {
+  color: #000;
+}
+
 .swiper-wrapper {
   -webkit-transition-timing-function: linear !important;
   transition-timing-function: linear !important;

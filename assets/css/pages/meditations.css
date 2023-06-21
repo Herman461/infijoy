@@ -326,7 +326,7 @@
 }
 
 .main-slider__slide {
-  padding-bottom: 35px;
+  padding-bottom: 108px;
 }
 
 .base-slider_big.visible .button-prev {
@@ -428,6 +428,10 @@
   .main-slider .slide-main-slider::before {
     height: 100% !important;
     background: url("../../images/meditation_bg.png") 0 0/cover no-repeat !important;
+  }
+
+  .main-slider__slide {
+    padding-bottom: 35px;
   }
 
   .row__column {
@@ -594,6 +598,28 @@
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     top: auto;
+  }
+
+  .main-slider_offset .controls-main-slider__button-prev {
+    left: calc(50% - 25px);
+  }
+
+  .main-slider_offset .controls-main-slider__button-next {
+    left: calc(50% + 25px);
+  }
+
+  .main-slider_offset .controls-main-slider__button-prev,
+  .main-slider_offset .controls-main-slider__button-next {
+    border: 1px solid #fff;
+    background: none !important;
+  }
+
+  .main-slider_offset .controls-main-slider__button-prev svg {
+    color: #fff !important;
+  }
+
+  .main-slider_offset .controls-main-slider__button-next svg {
+    color: #fff !important;
   }
 
   .main-slider_meditation .button-prev {
