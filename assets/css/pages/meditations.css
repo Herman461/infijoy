@@ -137,6 +137,12 @@
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
+.main-slider.visible .button-prev {
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+
 .main-slider_meditation .button-prev {
   display: none !important;
 }
@@ -416,7 +422,7 @@
   }
 
   .main-slider .slide-main-slider::before {
-    height: 469px !important;
+    height: 100% !important;
     background: url("../../images/meditation_bg.png") 0 0/cover no-repeat !important;
   }
 
@@ -593,14 +599,7 @@
   }
 
   .main-slider_offset .slide-main-slider::before {
-    content: "";
-    z-index: 3;
-    display: block !important;
-    pointer-events: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    display: none;
   }
 
   .main-slider_offset .slide-main-slider::before {

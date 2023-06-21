@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css?_v=20230620161136">
-    <link rel="stylesheet" href="assets/css/style.css?_v=20230620161136">
-    <link rel="stylesheet" href="assets/css/pages/courses.css?_v=20230620161136">
-    <link rel="stylesheet" href="assets/css/plugins/video-js.min.css?_v=20230620161136">
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css?_v=20230621151748">
+    <link rel="stylesheet" href="assets/css/style.css?_v=20230621151748">
+    <link rel="stylesheet" href="assets/css/pages/courses.css?_v=20230621151748">
+    <link rel="stylesheet" href="assets/css/plugins/video-js.min.css?_v=20230621151748">
     <style>
         .preloader {
             background-color: #fff;
@@ -476,7 +476,7 @@
                                 <div class="slide-main-slider__text">
                                     <img src="assets/images/texts/02.png" alt="">
                                 </div>
-                                <a href="" data-modal-link="modal-video" class="slide-main-slider__button button button_white">
+                                <a href="" data-modal-link="modal-video-2" class="slide-main-slider__button button button_white">
                                     <svg>
                                         <use xlink:href="assets/images/icons/icons.svg#play"></use>
                                     </svg>
@@ -753,7 +753,7 @@
 
     </div>
     <div id="modal-video" class="modal">
-        <a href="" data-modal-link="modal-video" data-modal-close="" class="modal__close">
+        <a href="" data-modal-close="" class="modal__close">
             <svg>
                 <use xlink:href="assets/images/icons/icons.svg#close"></use>
             </svg>
@@ -766,7 +766,7 @@
                         <div class="video-modal__title">The Choice to Be Happy</div>
                         <div class="video-modal__author">Henrique Bueno</div>
                     </div>
-                    <a href="" data-modal-link="modal-video" class="video-modal__share">
+                    <a href="" class="video-modal__share">
                         Share
                         <svg>
                             <use xlink:href="assets/images/icons/icons.svg#share"></use>
@@ -788,10 +788,46 @@
 
         </div>
     </div>
-    <script src="assets/js/script.js?_v=20230620161136"></script>
-    <script src="assets/js/plugins/swiper-bundle.min.js?_v=20230620161136"></script>
-    <script src="assets/js/plugins/video.min.js?_v=20230620161136"></script>
-    <script src="assets/js/app.js?_v=20230620161136"></script>
+    <div id="modal-video-2" class="modal">
+        <a href="" data-modal-close="" class="modal__close">
+            <svg>
+                <use xlink:href="assets/images/icons/icons.svg#close"></use>
+            </svg>
+        </a>
+        <div class="modal__content">
+
+            <div class="video-modal">
+                <div class="video-modal__top">
+                    <div class="video-modal__info">
+                        <div class="video-modal__title">The Choice to Be Happy</div>
+                        <div class="video-modal__author">Henrique Bueno</div>
+                    </div>
+                    <a href="" class="video-modal__share">
+                        Share
+                        <svg>
+                            <use xlink:href="assets/images/icons/icons.svg#share"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="video-modal__body">
+                    <video id="video-2" class="video-js" controls preload="metadata">
+                        <source src="assets/video/02.mp4" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                    </video>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/js/script.js?_v=20230621151748"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js?_v=20230621151748"></script>
+    <script src="assets/js/plugins/video.min.js?_v=20230621151748"></script>
+    <script src="assets/js/app.js?_v=20230621151748"></script>
     <script>
     window.addEventListener('load', function() {
         const preloader = document.querySelector('.preloader')

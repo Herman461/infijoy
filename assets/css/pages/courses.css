@@ -37,7 +37,11 @@
 }
 
 .main-slider .controls-main-slider__button-prev {
-  display: none;
+  display: none !important;
+}
+
+.base-slider_trending .base-slider__main::before {
+  display: none !important;
 }
 
 .trending-block {
@@ -126,6 +130,19 @@
   line-height: 24px;
   color: #181F3E;
   margin-top: 26px;
+}
+
+.base-slider_popular .base-slider__button-prev::before {
+  display: none !important;
+}
+
+.base-slider_popular .base-slider__button-prev {
+  display: none !important;
+}
+
+.base-slider_popular .base-slider__body {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 @media (min-width: 767.98px) {

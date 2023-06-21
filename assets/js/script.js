@@ -405,6 +405,7 @@ window.addEventListener('click', function(e) {
 	}
 
 	if (e.target.closest('[data-modal-close]')) {
+		e.preventDefault()
 		const closeButton = e.target.closest('[data-modal-close]')
 		closeButton.closest('.modal').classList.remove('active')
 		if (closeButton.closest('.modal').querySelector('video')) {

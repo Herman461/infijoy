@@ -346,11 +346,11 @@ textarea.input {
 .menu__link {
   color: #181F3E;
   position: relative;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .menu__link_active {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .languages {
@@ -1365,12 +1365,6 @@ textarea.input {
   visibility: visible;
 }
 
-.main-slider.visible .button-prev {
-  display: -webkit-inline-box !important;
-  display: -ms-inline-flexbox !important;
-  display: inline-flex !important;
-}
-
 .green-audio-player .holder .play-pause-btn {
   visibility: visible !important;
 }
@@ -1382,6 +1376,11 @@ textarea.input {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
 }
 
 @media (min-width: 480.98px) {
@@ -1583,6 +1582,12 @@ textarea.input {
 
   .top__title_diff span:last-child {
     display: none;
+  }
+
+  .main-slider.visible .button-prev {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
   }
 }
 
