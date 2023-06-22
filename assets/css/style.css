@@ -1594,6 +1594,10 @@ textarea.input {
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
   }
+
+  .page__title span:last-child {
+    display: none;
+  }
 }
 
 @media (min-width: 1272px) {
@@ -1916,6 +1920,10 @@ textarea.input {
   .top__title_diff span:first-child {
     display: none;
   }
+
+  .page__title span:first-child {
+    display: none;
+  }
 }
 
 @media (max-width: 991.98px) and (max-width: 1272px) {
@@ -1979,6 +1987,7 @@ textarea.input {
 
   .top__title {
     font-weight: 700;
+    font-size: 20px !important;
   }
 
   .modal__content {

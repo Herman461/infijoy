@@ -410,6 +410,7 @@ window.addEventListener('click', function(e) {
 		closeButton.closest('.modal').classList.remove('active')
 		if (closeButton.closest('.modal').querySelector('video')) {
 			closeButton.closest('.modal').querySelector('video').pause()
+			closeButton.closest('.modal').querySelector('video').currentTime = 0
 		}
 		closeButton.closest('.modal').classList.remove('active')
 		document.body.classList.remove('lock')
