@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (slider.classList.contains('base-slider__body_big')) {
                 new Swiper(slider, {
                     speed: 700,
-                    spaceBetween: 10,
+                    spaceBetween: 16,
                     navigation: {
                         nextEl: slider.closest('.base-slider').querySelector('.base-slider__button-next'),
                         prevEl: slider.closest('.base-slider').querySelector('.base-slider__button-prev'),
@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 new Swiper(slider, {
                     speed: 700,
-                    spaceBetween: 10,
+                    spaceBetween: 16,
                     loop: true,
                     navigation: {
                         nextEl: slider.closest('.base-slider').querySelector('.base-slider__button-next'),
