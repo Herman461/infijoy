@@ -95,6 +95,9 @@ document.addEventListener('DOMContentLoaded', function() {
             new Swiper(slider, {
                 speed: 700,
                 loop: true,
+                slidesOffsetAfter:0,
+                loopFillGroupBlank: false,
+                slidesPerView: 'auto',
                 shortSwipes: false,
                 watchSlidesProgress: true,
                 navigation: {
