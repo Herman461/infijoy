@@ -135,7 +135,10 @@ document.addEventListener('DOMContentLoaded', function() {
                         if (!wasSliderChanged) {
                             wasSliderChanged = true
                         } else {
-                            slider.closest('.main-slider').classList.add('visible')
+                            if (!slider.closest('.main-slider').classList.contains('visible')) {
+                                slider.closest('.main-slider').classList.add('visible')
+                            }
+
 
                             if (slider.closest('.main-slider') && slider.closest('.main-slider').classList.contains('audio-slider')) {
                                 if (slider.closest('.audio-slider').querySelector('.swiper-slide-prev .play-pause-btn').getAttribute('aria-label') === 'Pause') {

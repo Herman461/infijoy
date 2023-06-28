@@ -1367,6 +1367,11 @@ textarea.input {
   visibility: visible;
 }
 
+.swiper-container * {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
 .green-audio-player .holder .play-pause-btn {
   visibility: visible !important;
 }
