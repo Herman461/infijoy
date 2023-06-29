@@ -129,6 +129,12 @@ body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   color: #fff;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+html {
+  overflow: hidden;
 }
 
 img {
