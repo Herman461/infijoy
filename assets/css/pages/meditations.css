@@ -361,6 +361,16 @@
   margin-bottom: 70px;
 }
 
+.main-slider .button-next {
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
 @media (min-width: 480.98px) {
   .row {
     display: -webkit-box;

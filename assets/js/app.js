@@ -89,74 +89,131 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     if (mainSliders.length > 0) {
+
         for (let index = 0; index < mainSliders.length; index++) {
             const slider = mainSliders[index]
             let wasSliderChanged = false
-            new Swiper(slider, {
-                speed: 700,
-                loop: true,
-                slidesOffsetAfter:0,
-                loopFillGroupBlank: false,
-                slidesPerView: 'auto',
-                shortSwipes: false,
-                watchSlidesProgress: true,
-                navigation: {
-                    nextEl: slider.closest('.main-slider').querySelector('.controls-main-slider__button-next'),
-                    prevEl: slider.closest('.main-slider').querySelector('.controls-main-slider__button-prev'),
-                },
-                pagination: {
-                    el: slider.closest('.main-slider').querySelector('.controls-main-slider__dots'),
-                    type: 'bullets',
-                    clickable: true
-                },
-                on: {
-                    init() {
-                        if (slider.querySelectorAll('.meditations-main-slider__audio').length > 0) {
-                            if (slider.closest('.main-slider_meditation')) {
-                                GreenAudioPlayer.init({
-                                    selector: '.main-slider_meditation .meditations-main-slider__audio',
-                                    stopOthersOnPlay: true
-                                });
-                            }
 
-                            if (slider.closest('.main-slider_offset')) {
-                                GreenAudioPlayer.init({
-                                    selector: '.main-slider_offset .meditations-main-slider__audio',
-                                    stopOthersOnPlay: true
-                                });
-                            }
+            $(slider).on('init', function(event, slick){
 
-                        }
-                    },
-                    transitionEnd() {
+                if (slider.querySelectorAll('.meditations-main-slider__audio').length > 0) {
+                    if (slider.closest('.main-slider_meditation')) {
+                        GreenAudioPlayer.init({
+                            selector: '.main-slider_meditation .meditations-main-slider__audio',
+                            stopOthersOnPlay: true
+                        });
+                    }
+
+                    if (slider.closest('.main-slider_offset')) {
+                        GreenAudioPlayer.init({
+                            selector: '.main-slider_offset .meditations-main-slider__audio',
+                            stopOthersOnPlay: true
+                        });
+                    }
+
+                }
+            });
+            $(slider).on('beforeChange', function(event, slick, currentSlide){
+                const currentSlideEl = slider.querySelector('.slick-current')
+
+                if (!wasSliderChanged) {
+                    wasSliderChanged = true
+                    if (!slider.closest('.main-slider').classList.contains('visible')) {
+                        slider.closest('.main-slider').classList.add('visible')
+                    }
+                } else {
+                    if (!slider.closest('.main-slider').classList.contains('visible')) {
+                        slider.closest('.main-slider').classList.add('visible')
+                    }
 
 
+                    if (slider.closest('.main-slider') && slider.closest('.main-slider').classList.contains('audio-slider')) {
+                        if (currentSlideEl.querySelector('.play-pause-btn').getAttribute('aria-label') === 'Pause') {
+                            const audio = currentSlideEl.querySelector('audio')
+                            GreenAudioPlayer.pausePlayer(audio)
 
-                        if (!wasSliderChanged) {
-                            wasSliderChanged = true
-                        } else {
-                            if (!slider.closest('.main-slider').classList.contains('visible')) {
-                                slider.closest('.main-slider').classList.add('visible')
-                            }
-
-
-                            if (slider.closest('.main-slider') && slider.closest('.main-slider').classList.contains('audio-slider')) {
-                                if (slider.closest('.audio-slider').querySelector('.swiper-slide-prev .play-pause-btn').getAttribute('aria-label') === 'Pause') {
-                                    const audio = slider.closest('.audio-slider').querySelector('.swiper-slide-prev audio')
-                                    GreenAudioPlayer.pausePlayer(audio)
-
-                                }
-
-                                if (slider.closest('.audio-slider').querySelector('.swiper-slide-next .play-pause-btn').getAttribute('aria-label') === 'Pause') {
-                                    const audio = slider.closest('.audio-slider').querySelector('.swiper-slide-next audio')
-                                    GreenAudioPlayer.pausePlayer(audio)
-
-                                }
-                            }
                         }
                     }
                 }
-            })
+            });
+            $(slider).slick({
+                infinite: true,
+                slidesToShow: 1,
+                speed: 900,
+                arrows: true,
+                prevArrow: $(slider.closest('.main-slider').querySelector('.controls-main-slider__button-prev')),
+                nextArrow: $(slider.closest('.main-slider').querySelector('.controls-main-slider__button-next')),
+                dots: true,
+
+            });
+
+
+
+            // new Swiper(slider, {
+            //     speed: 700,
+            //     loop: true,
+            //     slidesOffsetAfter:0,
+            //     loopFillGroupBlank: false,
+            //     slidesPerView: 'auto',
+            //     shortSwipes: false,
+            //     watchSlidesProgress: true,
+            //     navigation: {
+            //         nextEl: slider.closest('.main-slider').querySelector('.controls-main-slider__button-next'),
+            //         prevEl: slider.closest('.main-slider').querySelector('.controls-main-slider__button-prev'),
+            //     },
+            //     pagination: {
+            //         el: slider.closest('.main-slider').querySelector('.controls-main-slider__dots'),
+            //         type: 'bullets',
+            //         clickable: true
+            //     },
+            //     on: {
+            //         init() {
+            //             if (slider.querySelectorAll('.meditations-main-slider__audio').length > 0) {
+            //                 if (slider.closest('.main-slider_meditation')) {
+            //                     GreenAudioPlayer.init({
+            //                         selector: '.main-slider_meditation .meditations-main-slider__audio',
+            //                         stopOthersOnPlay: true
+            //                     });
+            //                 }
+            //
+            //                 if (slider.closest('.main-slider_offset')) {
+            //                     GreenAudioPlayer.init({
+            //                         selector: '.main-slider_offset .meditations-main-slider__audio',
+            //                         stopOthersOnPlay: true
+            //                     });
+            //                 }
+            //
+            //             }
+            //         },
+            //         transitionEnd() {
+            //
+            //
+            //
+            //             if (!wasSliderChanged) {
+            //                 wasSliderChanged = true
+            //             } else {
+            //                 if (!slider.closest('.main-slider').classList.contains('visible')) {
+            //                     slider.closest('.main-slider').classList.add('visible')
+            //                 }
+            //
+            //
+            //                 if (slider.closest('.main-slider') && slider.closest('.main-slider').classList.contains('audio-slider')) {
+            //                     if (slider.closest('.audio-slider').querySelector('.swiper-slide-prev .play-pause-btn').getAttribute('aria-label') === 'Pause') {
+            //                         const audio = slider.closest('.audio-slider').querySelector('.swiper-slide-prev audio')
+            //                         GreenAudioPlayer.pausePlayer(audio)
+            //
+            //                     }
+            //
+            //                     if (slider.closest('.audio-slider').querySelector('.swiper-slide-next .play-pause-btn').getAttribute('aria-label') === 'Pause') {
+            //                         const audio = slider.closest('.audio-slider').querySelector('.swiper-slide-next audio')
+            //                         GreenAudioPlayer.pausePlayer(audio)
+            //
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+            // })
         }
     }
 
