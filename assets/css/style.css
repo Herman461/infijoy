@@ -2112,3 +2112,8 @@ textarea.input {
     background: #F1F3FA;
   }
 }
+
+.preloader.hidden {
+  width: 0 !important;
+  height: 0 !important;
+}
