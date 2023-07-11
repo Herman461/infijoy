@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+
     window.addEventListener('click', function(e) {
         if (e.target.closest('.languages__head')) {
             e.target.closest('.languages').classList.toggle('active')
@@ -228,6 +229,39 @@ document.addEventListener('DOMContentLoaded', function() {
             const slider = baseSliders[index]
             let wasSliderChanged = false
 
+            if (slider.classList.contains('base-slider__body_static')) {
+
+                new Swiper(slider, {
+                    speed: 700,
+                    spaceBetween: 16,
+                    loop: true,
+                    navigation: {
+                        nextEl: slider.closest('.base-slider').querySelector('.base-slider__button-next'),
+                        prevEl: slider.closest('.base-slider').querySelector('.base-slider__button-prev'),
+                    },
+                    slidesPerView: 1.1,
+                    breakpoints: {
+                        991.98: {
+                            slidesPerView: 4,
+                            spaceBetween: 24,
+                        },
+                        767.98: {
+                            slidesPerView: 2.7,
+                            spaceBetween: 24,
+                        },
+                        687.98: {
+                            slidesPerView: 1.7,
+                            spaceBetween: 24,
+                        },
+                        360.98: {
+                            spaceBetween: 23,
+                            slidesPerView: 1.2,
+                        }
+                    }
+                })
+
+                continue;
+            }
             if (slider.classList.contains('base-slider__body_trending')) {
                 new Swiper(slider, {
                     speed: 700,
@@ -397,5 +431,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    const meditationDetailsAudio = document.querySelector('.meditation-details .block-meditation-details__audio')
 
+    if (meditationDetailsAudio) {
+        GreenAudioPlayer.init({
+            selector: '.meditation-details .block-meditation-details__audio',
+            stopOthersOnPlay: true
+        });
+    }
 })

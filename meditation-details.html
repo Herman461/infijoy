@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css?_v=20230711053221">
+    <link rel="stylesheet" href="assets/css/plugins/audio-player.min.css?_v=20230711053221">
+
+    <link rel="stylesheet" href="assets/css/pages/meditation-details.css?_v=20230711053221">
     <link rel="stylesheet" href="assets/css/pages/meditations.css?_v=20230711053221">
     <style>
         .preloader {
@@ -25,7 +28,7 @@
             visibility: hidden;
         }
     </style>
-    <title>Courses</title>
+    <title>Meditations</title>
 </head>
 <div class="preloader"></div>
 <div class="wrapper">
@@ -45,7 +48,7 @@
                                 <a href="" class="menu__link">Courses</a>
                             </li>
                             <li class="menu__item">
-                                <a href="" class="menu__link">Meditations</a>
+                                <a href="" class="menu__link menu__link_active">Meditations</a>
                             </li>
                             <li class="menu__item">
                                 <a href="" class="menu__link">Articles</a>
@@ -99,45 +102,151 @@
         </div>
     </header>
 
-    <main class="page">
-        <div class="page__container container">
-            <div class="page__title page__title_bold">Top 10 Most Popular</div>
-            <div class="row">
-                <div class="row__column">
-                    <div class="popular-block">
-                        <div class="popular-block__image">
-                            <img src="assets/images/popular/bg_1.jpg" alt="">
+    <main class="page page_white">
+        <div class="meditation-details">
+            <div class="meditation-details__container container container_small">
+                <div class="meditation-details__body">
+                    <div class="meditation-details__block block-meditation-details">
+                        <div class="block-meditation-details__background">
+                            <img src="assets/images/meditations/details/bg.jpg" alt="">
                         </div>
-                        <div class="popular-block__text">
-                            <img src="assets/images/popular/text_1.png" alt="">
+                        <div class="block-meditation-details__circle">
+                            <div class="circle circle_small">
+                                <img src="assets/images/meditations/circles/01.png" alt="">
+                            </div>
                         </div>
-                        <div class="popular-block__content">
-                            <div class="popular-block__avatar">
-                                <img src="assets/images/avatars/01.png" alt="">
-                            </div>
-                            <div class="popular-block__info">
-                                <div class="popular-block__title">The Choice to Be Happy</div>
-                                <div class="popular-block__name">Henrique Bueno</div>
-                            </div>
+                        <div class="block-meditation-details__audio">
+                            <div class="block-meditation-details__name">Sample play</div>
+                            <audio>
+                                <source src="assets/audio/01.mp3" type="audio/mp3">
+                            </audio>
                         </div>
                     </div>
+                    <div class="meditation-details__get-started get-started">
+                        <div class="get-started__title">Get Started Now</div>
+                        <div class="get-started__items">
+                            <div class="get-started__item">
+                                <div class="get-started__icon">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#schedule"></use>
+                                    </svg>
+                                </div>
+                                <span>6 Min</span>
+                            </div>
+                            <div class="get-started__item">
+                                <div class="get-started__icon">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#gift"></use>
+                                    </svg>
+                                </div>
+                                <span>Free Trial</span>
+                            </div>
+                            <div class="get-started__item">
+                                <div class="get-started__icon">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#flag"></use>
+                                    </svg>
+                                </div>
+                                <span>Start Any Time</span>
+                            </div>
+                            <div class="get-started__item">
+                                <div class="get-started__icon">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#tick-circle"></use>
+                                    </svg>
+                                </div>
+                                <span>No Credit Card Required</span>
+                            </div>
+                        </div>
+                        <a href="" class="get-started__button button button_violet">
+                            Start Meditations
+                        </a>
+                    </div>
                 </div>
-                <div class="row__column">
-                    <div class="popular-block">
-                        <div class="popular-block__image">
-                            <img src="assets/images/popular/bg_2.jpg" alt="">
+                <div class="meditation-details__description description-meditation-details">
+                    <div class="description-meditation-details__main">
+                        <div class="description-meditation-details__title">Deep Breath Body Scan</div>
+                        <div class="description-meditation-details__text">
+                            <p>
+                                We all have moments where we feel overwhelmed: rushed off our feet, struggling to focus, or feeling a little out of touch with ourselves. This classic body scan meditation is intended to help you slow down, acknowledge how you feel, listen to your body, and reconnect with yourself.
+                            </p>
+                            <p>
+                                As you move through your body, scanning it part by part, you will tune into it deeply, reconnecting with your physical self. Try to observe any sensations you are feeling without any judgment, allowing yourself to be fully present. While the main goal of this meditation is to achieve more mindfulness, self-awareness, and presence, you may also find it quite relaxing, as it helps to release tension in both the body and mind.
+                                <br>
+                                This meditation is suitable for all levels.
+                            </p>
                         </div>
-                        <div class="popular-block__text">
-                            <img src="assets/images/popular/text_2.png" alt="">
+                        <div class="description-meditation-details__tags">
+                            <a href="" class="description-meditation-details__tag">Guided Meditations</a>
+                            <a href="" class="description-meditation-details__tag">Soundscapes</a>
+                            <a href="" class="description-meditation-details__tag">Sleep</a>
+                            <a href="" class="description-meditation-details__tag">Breathwork</a>
+                            <a href="" class="description-meditation-details__tag">Sleep</a>
                         </div>
-                        <div class="popular-block__content">
-                            <div class="popular-block__avatar">
-                                <img src="assets/images/avatars/02.png" alt="">
-                            </div>
-                            <div class="popular-block__info">
-                                <div class="popular-block__title">Holistic Self-Care</div>
-                                <div class="popular-block__name">Darlene Marshall</div>
-                            </div>
+                    </div>
+                    <div class="description-meditation-details__column"></div>
+
+                </div>
+                <div class="base-slider base-slider_static">
+                    <div class="base-slider__top top">
+                        <h2 class="top__title">Related Meditations</h2>
+                    </div>
+                    <div class="base-slider__main">
+                        <div class="base-slider__body base-slider__body_static swiper">
+                            <a href="" class="base-slider__block block">
+                                <div class="block__wrapper">
+                                    <div class="block__image">
+                                        <img src="assets/images/meditations/details/01.png" alt="">
+                                    </div>
+                                    <div class="block__label">10 min</div>
+                                </div>
+                                <div class="block__title">Embodied Grounding
+                                    <br>Meditation
+                                </div>
+
+
+                            </a>
+                            <a href="" class="base-slider__block block">
+                                <div class="block__wrapper">
+                                    <div class="block__image">
+                                        <img src="assets/images/meditations/details/02.png" alt="">
+                                    </div>
+                                    <div class="block__label">5 min</div>
+                                </div>
+                                <div class="block__title">Soothing The Senses</div>
+
+
+                            </a>
+                            <a href="" class="base-slider__block block">
+                                <div class="block__wrapper">
+                                    <div class="block__image">
+                                        <img src="assets/images/meditations/details/03.png" alt="">
+                                    </div>
+                                    <div class="block__label">5 min</div>
+                                </div>
+                                <div class="block__title">Loving-Kindness</div>
+
+
+                            </a>
+                            <a href="" class="base-slider__block block">
+                                <div class="block__wrapper">
+                                    <div class="block__image">
+                                        <img src="assets/images/meditations/details/04.png" alt="">
+                                    </div>
+                                    <div class="block__label">10 min</div>
+                                </div>
+                                <div class="block__title">Instant Mood-Booster</div>
+                            </a>
+                        </div>
+                        <div class="base-slider__button-prev button-prev">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
+                        </div>
+                        <div class="base-slider__button-next button-next">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -175,35 +284,35 @@
                     </div>
                     <ul data-da=".footer__top,991.98,last" class="footer__socials socials-footer">
                         <li class="socials-footer__item">
-                            <a href="" class="socials-footer__link">
+                            <a href="https://www.facebook.com/infijoy" class="socials-footer__link">
                                 <svg>
                                     <use xlink:href="assets/images/icons/icons.svg#facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials-footer__item">
-                            <a href="" class="socials-footer__link">
+                            <a href="https://www.instagram.com/infijoy_official" class="socials-footer__link">
                                 <svg>
                                     <use xlink:href="assets/images/icons/icons.svg#instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials-footer__item">
-                            <a href="" class="socials-footer__link">
+                            <a href="https://twitter.com/infijoy" class="socials-footer__link">
                                 <svg>
                                     <use xlink:href="assets/images/icons/icons.svg#twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials-footer__item">
-                            <a href="" class="socials-footer__link">
+                            <a href="https://ae.linkedin.com/company/infijoy-platform-for-humanity" class="socials-footer__link">
                                 <svg>
                                     <use xlink:href="assets/images/icons/icons.svg#in"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="socials-footer__item">
-                            <a href="" class="socials-footer__link">
+                            <a href="https://www.youtube.com/channel/UCFUOtFFnuaWt1ocBKOpLBOw" class="socials-footer__link">
                                 <svg>
                                     <use xlink:href="assets/images/icons/icons.svg#youtube"></use>
                                 </svg>
@@ -283,13 +392,13 @@
             <div class="footer__bottom bottom-footer">
                 <ul class="bottom-footer__menu menu-bottom-footer">
                     <li class="menu-bottom-footer__item">
-                        <a href="" class="menu-bottom-footer__link">Contact Us</a>
+                        <a href="mailto:support@infijoy.com" class="menu-bottom-footer__link">Contact Us</a>
                     </li>
                     <li class="menu-bottom-footer__item">
-                        <a href="" class="menu-bottom-footer__link">Privacy Policy</a>
+                        <a href="https://app.infijoy.com/en/privacy-policy?" class="menu-bottom-footer__link">Privacy Policy</a>
                     </li>
                     <li class="menu-bottom-footer__item">
-                        <a href="" class="menu-bottom-footer__link">Terms</a>
+                        <a href="https://app.infijoy.com/en/terms-of-service?" class="menu-bottom-footer__link">Terms</a>
                     </li>
                     <li class="menu-bottom-footer__item menu-bottom-footer__item_hidden">
                         <a href="" class="menu-bottom-footer__link">Privacy Settings</a>
@@ -302,6 +411,10 @@
 
 </div>
 <script src="assets/js/script.js?_v=20230711053221"></script>
+<script src="assets/js/plugins/swiper-bundle.min.js?_v=20230711053221"></script>
+<script src="assets/js/plugins/jquery-3.6.0.min.js?_v=20230711053221"></script>
+<script src="assets/js/plugins/slick.min.js?_v=20230711053221"></script>
+<script src="assets/js/plugins/audio-player.min.js?_v=20230711053221"></script>
 <script src="assets/js/app.js?_v=20230711053221"></script>
 <script>
     window.addEventListener('load', function() {

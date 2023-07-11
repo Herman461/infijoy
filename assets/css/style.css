@@ -173,6 +173,10 @@ body.lock {
   max-width: 1272px;
 }
 
+.container_small {
+  max-width: 1227px;
+}
+
 .header,
 .footer {
   -webkit-box-flex: 0;
@@ -847,6 +851,10 @@ textarea.input {
   margin-bottom: 60px;
 }
 
+.base-slider .block::before {
+  display: none !important;
+}
+
 .base-slider__top {
   margin-bottom: 24px;
   margin-bottom: 24px;
@@ -956,6 +964,66 @@ textarea.input {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
+.block__wrapper {
+  position: relative;
+  min-height: 225px;
+  width: 100%;
+}
+
+.base-slider__block {
+  display: block !important;
+}
+
+.base-slider_static .top__title {
+  font-size: 24px;
+}
+
+.base-slider_static .block {
+  padding: 0 !important;
+}
+
+.base-slider_static .block__title {
+  font-weight: 500 !important;
+  color: #000000 !important;
+  margin-top: 13px !important;
+  line-height: 19px !important;
+  font-size: 14px !important;
+}
+
+.base-slider_static .base-slider__top {
+  margin-bottom: 18px;
+}
+
+.base-slider_static .button-prev,
+.base-slider_static .button-next {
+  display: none !important;
+}
+
+.base-slider_static .block {
+  min-height: 225px !important;
+  -webkit-box-pack: end !important;
+  -ms-flex-pack: end !important;
+  justify-content: flex-end !important;
+}
+
+.base-slider_static .block__wrapper {
+  min-height: 225px !important;
+  padding: 20px 15px !important;
+  -webkit-box-pack: end !important;
+  -ms-flex-pack: end !important;
+  justify-content: flex-end !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
 .top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -980,6 +1048,10 @@ textarea.input {
   font-weight: 600;
   line-height: 150%;
   white-space: nowrap;
+}
+
+.page_white {
+  background: #EDEDED;
 }
 
 .swiper-build {
@@ -1584,6 +1656,11 @@ textarea.input {
     padding-left: 173px;
   }
 
+  .base-slider_static .swiper-wrapper {
+    -webkit-transform: none !important;
+    transform: none !important;
+  }
+
   .modal__content {
     max-width: 990px;
   }
@@ -1922,6 +1999,14 @@ textarea.input {
 
   .footer__menu {
     margin-bottom: 30px;
+  }
+
+  .base-slider_static .top__title {
+    font-size: 20px;
+  }
+
+  .base-slider_static .base-slider__top {
+    margin-bottom: 24px;
   }
 
   .video-modal__body .video-js {
