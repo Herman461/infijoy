@@ -229,6 +229,40 @@ document.addEventListener('DOMContentLoaded', function() {
             const slider = baseSliders[index]
             let wasSliderChanged = false
 
+            if (slider.classList.contains('base-slider__body_related')) {
+
+                new Swiper(slider, {
+                    speed: 700,
+                    spaceBetween: 9,
+                    loop: true,
+                    navigation: {
+                        nextEl: slider.closest('.base-slider').querySelector('.base-slider__button-next'),
+                        prevEl: slider.closest('.base-slider').querySelector('.base-slider__button-prev'),
+                    },
+                    slidesPerView: 2.1,
+                    breakpoints: {
+                        991.98: {
+                            slidesPerView: 4,
+                            spaceBetween: 18,
+                        },
+                        767.98: {
+                            slidesPerView: 4,
+                            spaceBetween: 18,
+                        },
+                        687.98: {
+                            slidesPerView: 3.2,
+                            spaceBetween: 9,
+                        },
+                        360.98: {
+                            spaceBetween: 9,
+                            slidesPerView: 2.2,
+                        }
+                    }
+                })
+
+                continue;
+            }
+
             if (slider.classList.contains('base-slider__body_static')) {
 
                 new Swiper(slider, {
@@ -397,7 +431,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const item = players[index]
 
             const player = videojs(item)
-            const timeEl = item.closest('.modal').querySelector('.vjs-remaining-time')
+
+            let timeEl = null
+            if (item.closest('.modal')) {
+                timeEl = item.closest('.modal').querySelector('.vjs-remaining-time')
+            } else {
+                timeEl = item.closest('.base-video').querySelector('.vjs-remaining-time')
+            }
+            console.log(timeEl)
             player.on('timeupdate', function() {
                 let currentTime = player.currentTime().toFixed(0)
                 let duration = player.duration().toFixed(0)

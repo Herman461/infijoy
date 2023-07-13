@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css?_v=20230714012835">
+    <link rel="stylesheet" href="assets/css/plugins/slick.css?_v=20230714012835">
+    <link rel="stylesheet" href="assets/css/style.css?_v=20230714012835">
+
+    <link rel="stylesheet" href="assets/css/pages/course.css?_v=20230714012835">
+    <link rel="stylesheet" href="assets/css/plugins/video-js.min.css?_v=20230714012835">
+    <style>
+        .preloader {
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            transition: all 0.3s ease 0s;
+        }
+
+        .preloader.hidden {
+            pointer-events: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
+    <title>Course</title>
+</head>
+
+<body>
+    <div class="preloader"></div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <a href="" class="header__logo">
+                    <img src="assets/images/logo.svg" alt="">
+                </a>
+                <div class="header__menu menu">
+                    <div class="menu__content">
+                        <nav class="menu__body">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">Home</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link menu__link_active">Courses</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">Meditations</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">Articles</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">For Business</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div data-da=".menu__content,991.98,last" class="header__actions">
+                    <div class="header__languages languages">
+                        <div class="languages__head">
+                            <img src="assets/images/flags/01.svg" alt="">
+                            <svg>
+                                <use xlink:href="assets/images/icons/icons.svg#angle-down"></use>
+                            </svg>
+                        </div>
+                        <ul class="languages__list">
+                            <li class="languages__item item-languages active">
+                                <div class="item-languages__flag">
+                                    <img src="assets/images/flags/01.svg" alt="">
+                                </div>
+                                <div class="item-languages__country">en</div>
+                            </li>
+                            <li class="languages__item item-languages">
+                                <div class="item-languages__flag">
+                                    <img src="assets/images/flags/02.svg" alt="">
+                                </div>
+                                <div class="item-languages__country">sp</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="header__button button button_stroke">Log in</a>
+                    <a href="" class="header__button button button_gradient">
+                        <span>Try for free</span>
+                    </a>
+                </div>
+                <div class="header__burger burger">
+                    <div class="burger__body">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </header>
+
+        <main class="page">
+            <div class="course">
+                <div class="course__intro intro-course">
+                    <div class="intro-course__container container">
+
+                        <div class="intro-course__content">
+                            <div class="intro-course__background intro-course__background_mobile">
+                                <img src="assets/images/course/bg_orange_adaptive.jpg" alt="">
+                            </div>
+                            <div class="intro-course__logo">
+                                <img src="assets/images/course/logo.png" alt="">
+                            </div>
+                            <div class="intro-course__author">Henrique Bueno</div>
+                            <div class="intro-course__buttons">
+                                <a data-modal-link="modal-video" href="" class="intro-course__button button button_transparent">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#play-white"></use>
+                                    </svg>
+                                    <span>Watch Trailer</span>
+                                </a>
+                                <a href="" class="intro-course__button button button_white">
+                                    <span>Start Course</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="intro-course__image">
+                            <img src="assets/images/course/intro_desktop.jpg" alt="">
+                            <img src="assets/images/course/intro_mobile.jpg" alt="">
+                        </div>
+                        <div class="intro-course__background intro-course__background_desktop">
+                            <img src="assets/images/course/bg_orange.png" alt="">
+                        </div>
+                        <div class="intro-course__circle">
+                            <img src="assets/images/course/circle.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="course__links links-course">
+                    <div class="links-course__container container">
+                        <ul class="links-course__list">
+                            <li class="links-course__item">
+                                <a class="active" href="">Overview</a>
+                            </li>
+                            <li class="links-course__item">
+                                <a href="">About Host</a>
+                            </li>
+                            <li class="links-course__item">
+                                <a href="">Course Plan</a>
+                            </li>
+                            <li class="links-course__item">
+                                <a href="#masterclass">Masterclass</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="course__body">
+                    <div class="course__container container">
+                        <div class="course__content">
+                            <div class="course__about about-course">
+                                <h1 class="about-course__title">The Choice to Be Happy</h1>
+                                <div class="about-course__slogan">Find Happiness in All Areas of Life</div>
+                                <div class="about-course__text">
+                                    <p>Happiness is different for everyone. And while it is not a fixed emotional state, everyone can benefit from experiencing more joy, satisfaction, and contentment in their lives. In this 5-week course, Happiness Specialist Henrique Bueno unpacks the meaning of happiness, shares tools to cultivate more positivity, and explores ways to improve your spiritual, physical, intellectual, relational, and emotional well-being. Creating a happier life starts with a choice to make changes to what you have control over.</p>
+                                </div>
+                            </div>
+                            <div class="course__advantages advantages-course">
+                                <h2 class="advantages-course__title course-title">Skills You Will Learn</h2>
+                                <ul class="advantages-course__list">
+                                    <li class="advantages-course__item">Learn techniques to attract a partner who gives you the best chance of crafting a love story that ends happily ever after.</li>
+                                    <li class="advantages-course__item">Use your head and your heart to prioritize what really matters to you in romantic relationships.</li>
+                                    <li class="advantages-course__item">Challenge societal narratives about what it means to be in love.</li>
+                                    <li class="advantages-course__item">Discover why modern dating is difficult through research about dating attitudes, relationship trends, and marital outcomes.</li>
+                                    <li class="advantages-course__item">Get insights from psychological research that provides fascinating answers about how, why, and who people are attracted</li>
+                                </ul>
+                            </div>
+                            <div class="course__host host-course">
+                                <h2 class="host-course__title course-title">About Host</h2>
+                                <div class="host-course__image">
+                                    <img src="assets/images/course/host.jpg" alt="">
+                                </div>
+                                <div class="host-course__content">
+                                    <h2 class="host-course__author course-title">Henrique Bueno</h2>
+                                    <div class="host-course__who">Social Scientist, Author of "The Science of Happily Ever After"</div>
+                                    <div class="host-course__text">
+                                        <p>Happiness specialist Henrique Bueno is the founder and CEO of the Wholebeing Institute Brazil, and the World Happiness Fest Brazil. He is also an international speaker on leadership and communication programs, as well as a visiting professor at several universities. Having attained his MAPP degree Henrique decided to dive deep into the scientific studies of what makes life worth living.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course__trailer trailer-course">
+                                <div class="trailer-course__image">
+                                    <img src="assets/images/course/trailer.png" alt="">
+                                    <img src="assets/images/course/trailer_adaptive.jpg" alt="">
+                                </div>
+                                <a href="" data-modal-link="modal-video" class="trailer-course__button button button_white">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#play"></use>
+                                    </svg>
+                                    <span>Watch Trailer</span>
+                                </a>
+                            </div>
+                            <div class="course__steps steps-course">
+                                <h2 class="steps-course__title course-title">Course Outline</h2>
+                                <div data-spoilers="" class="steps-course__items">
+                                    <div class="steps-course__item item-steps-course">
+                                        <div data-spoiler="" class="item-steps-course__main">
+                                            <div class="item-steps-course__image">
+                                                <img src="assets/images/course/weeks/01.png" alt="">
+                                            </div>
+                                            <div class="item-steps-course__info">
+                                                <div class="item-steps-course__label">Week 1</div>
+                                                <div class="item-steps-course__title">What Do You Want from Your Love Life?</div>
+                                            </div>
+                                            <div class="item-steps-course__arrow">
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/icons.svg#angle-small-down"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="item-steps-course__text">
+                                            <p>
+                                                Happiness can be understood as the combined experience of pleasurable emotions and meaning. Feeling good, therefore, is not enough. This week will introduce the two principles of spiritual well-being: meaning and purpose, and appreciation. You will be exposed to a grounded concept of a meaningful life, and will learn to appreciate and find meaning in day-to-day activities and experiences.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="steps-course__item item-steps-course">
+                                        <div data-spoiler="" class="item-steps-course__main">
+                                            <div class="item-steps-course__image">
+                                                <img src="assets/images/course/weeks/02.png" alt="">
+                                            </div>
+                                            <div class="item-steps-course__info">
+                                                <div class="item-steps-course__label">Week 2</div>
+                                                <div class="item-steps-course__title">Why Is Modern Dating So Difficult?</div>
+                                            </div>
+                                            <div class="item-steps-course__arrow">
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/icons.svg#angle-small-down"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="item-steps-course__text">
+                                            <p>
+                                                Happiness can be understood as the combined experience of pleasurable emotions and meaning. Feeling good, therefore, is not enough. This week will introduce the two principles of spiritual well-being: meaning and purpose, and appreciation. You will be exposed to a grounded concept of a meaningful life, and will learn to appreciate and find meaning in day-to-day activities and experiences.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="steps-course__item item-steps-course">
+                                        <div data-spoiler="" class="item-steps-course__main">
+                                            <div class="item-steps-course__image">
+                                                <img src="assets/images/course/weeks/03.png" alt="">
+                                            </div>
+                                            <div class="item-steps-course__info">
+                                                <div class="item-steps-course__label">Week 3</div>
+                                                <div class="item-steps-course__title">Three Wishes for Your Ideal Romantic Partner</div>
+                                            </div>
+                                            <div class="item-steps-course__arrow">
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/icons.svg#angle-small-down"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="item-steps-course__text">
+                                            <p>
+                                                Happiness can be understood as the combined experience of pleasurable emotions and meaning. Feeling good, therefore, is not enough. This week will introduce the two principles of spiritual well-being: meaning and purpose, and appreciation. You will be exposed to a grounded concept of a meaningful life, and will learn to appreciate and find meaning in day-to-day activities and experiences.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="steps-course__item item-steps-course">
+                                        <div data-spoiler="" class="item-steps-course__main">
+                                            <div class="item-steps-course__image">
+                                                <img src="assets/images/course/weeks/04.png" alt="">
+                                            </div>
+                                            <div class="item-steps-course__info">
+                                                <div class="item-steps-course__label">Week 4</div>
+                                                <div class="item-steps-course__title">How to Outsmart Online Dating Algorithms</div>
+                                            </div>
+                                            <div class="item-steps-course__arrow">
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/icons.svg#angle-small-down"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="item-steps-course__text">
+                                            <p>
+                                                Happiness can be understood as the combined experience of pleasurable emotions and meaning. Feeling good, therefore, is not enough. This week will introduce the two principles of spiritual well-being: meaning and purpose, and appreciation. You will be exposed to a grounded concept of a meaningful life, and will learn to appreciate and find meaning in day-to-day activities and experiences.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="steps-course__item item-steps-course">
+                                        <div data-spoiler="" class="item-steps-course__main">
+                                            <div class="item-steps-course__image">
+                                                <img src="assets/images/course/weeks/05.png" alt="">
+                                            </div>
+                                            <div class="item-steps-course__info">
+                                                <div class="item-steps-course__label">Week 5</div>
+                                                <div class="item-steps-course__title">Attaching to Your Happily Ever After</div>
+                                            </div>
+                                            <div class="item-steps-course__arrow">
+                                                <svg>
+                                                    <use xlink:href="assets/images/icons/icons.svg#angle-small-down"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="item-steps-course__text">
+                                            <p>
+                                                Happiness can be understood as the combined experience of pleasurable emotions and meaning. Feeling good, therefore, is not enough. This week will introduce the two principles of spiritual well-being: meaning and purpose, and appreciation. You will be exposed to a grounded concept of a meaningful life, and will learn to appreciate and find meaning in day-to-day activities and experiences.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="masterclass" class="course__masterclass masterclass-course">
+                                <h2 class="masterclass-course__title course-title">Masterclass</h2>
+                                <div class="masterclass-course__video base-video">
+                                    <video poster="assets/images/course/masterclass.jpg" id="video-10" class="video-js vjs-16-9" controls preload="metadata">
+                                        <source src="assets/video/01.mp4" type="video/mp4" />
+                                        <p class="vjs-no-js">
+                                            To view this video please enable JavaScript, and consider upgrading to a
+                                            web browser that
+                                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                        </p>
+                                    </video>
+                                </div>
+                                <div class="masterclass-course__description">
+                                    <p>Why has dating become so difficult; how do our instincts trick us into bad dating decisions; and how can we use the latest psychological research to craft an intell</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course__get-started">
+                            <div class="get-started">
+                                <div class="get-started__title">Get Started Now</div>
+                                <div class="get-started__items">
+                                    <div class="get-started__item">
+                                        <div class="get-started__icon">
+                                            <svg>
+                                                <use xlink:href="assets/images/icons/icons.svg#movie"></use>
+                                            </svg>
+                                        </div>
+                                        <span>30 Short Videos</span>
+                                    </div>
+                                    <div class="get-started__item">
+                                        <div class="get-started__icon">
+                                            <svg>
+                                                <use xlink:href="assets/images/icons/icons.svg#flag"></use>
+                                            </svg>
+                                        </div>
+                                        <span>Start Any Time</span>
+                                    </div>
+                                    <div class="get-started__item">
+                                        <div class="get-started__icon">
+                                            <svg>
+                                                <use xlink:href="assets/images/icons/icons.svg#tick-circle"></use>
+                                            </svg>
+                                        </div>
+                                        <span>No Credit Card Required</span>
+                                    </div>
+                                </div>
+                                <a href="" class="get-started__button button button_violet">
+                                    Start Meditations
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="course__slider">
+                    <div class="base-slider base-slider_static">
+                        <div class="base-slider__container container">
+                            <div class="base-slider__top top">
+                                <h2 class="top__title">Related Courses</h2>
+                            </div>
+                            <div class="base-slider__main">
+                                <div class="base-slider__body base-slider__body_related base-slider__body_static swiper">
+                                    <a href="" class="base-slider__block image">
+                                        <img src="assets/images/course/people/01.jpg" alt="">
+                                    </a>
+                                    <a href="" class="base-slider__block image">
+                                        <img src="assets/images/course/people/02.jpg" alt="">
+                                    </a>
+                                    <a href="" class="base-slider__block image">
+                                        <img src="assets/images/course/people/03.jpg" alt="">
+                                    </a>
+                                    <a href="" class="base-slider__block image">
+                                        <img src="assets/images/course/people/04.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="base-slider__button-prev button-prev">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                                    </svg>
+                                </div>
+                                <div class="base-slider__button-next button-next">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#angle-right"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__top">
+                    <div class="footer__main">
+                        <a href="" class="footer__logo">
+                            <img src="assets/images/logo-white.svg" alt="">
+                        </a>
+                        <ul data-da=".footer__top,991.98,last" class="footer__socials socials-footer">
+                            <li class="socials-footer__item">
+                                <a href="https://www.facebook.com/infijoy" class="socials-footer__link">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-footer__item">
+                                <a href="https://www.instagram.com/infijoy_official" class="socials-footer__link">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-footer__item">
+                                <a href="https://twitter.com/infijoy" class="socials-footer__link">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-footer__item">
+                                <a href="https://ae.linkedin.com/company/infijoy-platform-for-humanity" class="socials-footer__link">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#in"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials-footer__item">
+                                <a href="https://www.youtube.com/channel/UCFUOtFFnuaWt1ocBKOpLBOw" class="socials-footer__link">
+                                    <svg>
+                                        <use xlink:href="assets/images/icons/icons.svg#youtube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu menu-footer">
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/about-us" class="menu-footer__link">About</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/courses" class="menu-footer__link">Courses</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/meditations" class="menu-footer__link">Meditations</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog" class="menu-footer__link">Articles</a>
+                            </li>
+                        </ul>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/positive-psychology" class="menu-footer__link">Positive Psychology</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/thriving-at-work" class="menu-footer__link">Thriving at Work</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/mental-health" class="menu-footer__link">Mental Health</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/alternative-healing" class="menu-footer__link">Alternative Healing</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/self-care" class="menu-footer__link">Self-Care</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/mindfulness" class="menu-footer__link">Mindfulness</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/relationships" class="menu-footer__link">Relationships</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/rest-and-recovery" class="menu-footer__link">Rest and Recovery</a>
+                            </li>
+                        </ul>
+                        <ul class="menu-footer__list">
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/mental-strength" class="menu-footer__link">Mental Strength</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/philosophy" class="menu-footer__link">Philosophy</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/physical-health" class="menu-footer__link">Physical Health</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/nutrition" class="menu-footer__link">Nutrition</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/youth-and-family" class="menu-footer__link">Youth and Family</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/thought-leaders" class="menu-footer__link">Thought Leaders</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/emotional-intelligence" class="menu-footer__link">Emotional Intelligence</a>
+                            </li>
+                            <li class="menu-footer__item">
+                                <a href="https://www.infijoy.com/blog/spirituality" class="menu-footer__link">Spirituality</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom bottom-footer">
+                    <ul class="bottom-footer__menu menu-bottom-footer">
+                        <li class="menu-bottom-footer__item">
+                            <a href="mailto:support@infijoy.com" class="menu-bottom-footer__link">Contact Us</a>
+                        </li>
+                        <li class="menu-bottom-footer__item">
+                            <a href="https://app.infijoy.com/en/privacy-policy?" class="menu-bottom-footer__link">Privacy Policy</a>
+                        </li>
+                        <li class="menu-bottom-footer__item">
+                            <a href="https://app.infijoy.com/en/terms-of-service?" class="menu-bottom-footer__link">Terms</a>
+                        </li>
+                        <li class="menu-bottom-footer__item menu-bottom-footer__item_hidden">
+                            <a href="" class="menu-bottom-footer__link">Privacy Settings</a>
+                        </li>
+                    </ul>
+                    <div class="bottom-footer__copy">© Infijoy - 2023</div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <div id="modal-video" class="modal">
+        <a href="" data-modal-close="" class="modal__close">
+            <svg>
+                <use xlink:href="assets/images/icons/icons.svg#close"></use>
+            </svg>
+        </a>
+        <div class="modal__content">
+
+            <div class="video-modal">
+                <div class="video-modal__top">
+                    <div class="video-modal__info">
+                        <div class="video-modal__title">The Choice to Be Happy</div>
+                        <div class="video-modal__author">Henrique Bueno</div>
+                    </div>
+                    <a href="" class="video-modal__share">
+                        Share
+                        <svg>
+                            <use xlink:href="assets/images/icons/icons.svg#share"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="video-modal__body">
+                    <video id="video-2" class="video-js vjs-16-9" controls preload="metadata">
+                        <source src="assets/video/01.mp4" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                    </video>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/js/script.js?_v=20230714012835"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js?_v=20230714012835"></script>
+    <script src="assets/js/plugins/video.min.js?_v=20230714012835"></script>
+    <script src="assets/js/plugins/jquery-3.6.0.min.js?_v=20230714012835"></script>
+    <script src="assets/js/app.js?_v=20230714012835"></script>
+    <script>
+    window.addEventListener('load', function() {
+        const preloader = document.querySelector('.preloader')
+        preloader.classList.add('hidden')
+    })
+</script>
+</body>
+
+</html>

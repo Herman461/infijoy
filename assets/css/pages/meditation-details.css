@@ -76,24 +76,6 @@
   top: 10px;
 }
 
-.button_violet {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  min-height: 56px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  background: linear-gradient(98.84deg, #6135CA 0%, #4561D8 126.73%);
-}
-
 .description-meditation-details__main {
   background: #fff;
 }
