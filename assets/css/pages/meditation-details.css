@@ -29,6 +29,11 @@
   flex: 0 0 400px;
 }
 
+.meditation-details__get-started .get-started__button {
+  background: linear-gradient(98.84deg, #6135CA 0%, #4561D8 126.73%);
+  font-weight: 500 !important;
+}
+
 .meditation-details__description {
   margin-bottom: 50px;
 }
@@ -94,6 +99,7 @@
 }
 
 .description-meditation-details__text p {
+  font-family: "TT Hoves Pro Trial", sans-serif;
   font-size: 16px;
   line-height: 137.5%;
   color: #161616;
@@ -160,6 +166,16 @@
   position: relative;
   z-index: 3;
   background: none;
+}
+
+@media (min-width: 480.98px) {
+  .block-meditation-details__background img:first-child {
+    display: block;
+  }
+
+  .block-meditation-details__background img:last-child {
+    display: none;
+  }
 }
 
 @media (min-width: 991.98px) {
@@ -336,5 +352,11 @@
 
   .description-meditation-details__tag:last-child {
     margin-right: 24px;
+  }
+}
+
+@media (max-width: 480.98px) {
+  .block-meditation-details__background img:first-child {
+    display: none;
   }
 }
