@@ -120,12 +120,13 @@
 }
 
 .what-about__item {
-  border-radius: 16px;
+  -webkit-box-shadow: 0px 4px 94px 0px rgba(158, 158, 158, 0.25);
+  box-shadow: 0px 4px 94px 0px rgba(158, 158, 158, 0.25);
 }
 
 .what-about__item img {
+  border-radius: 16px;
   width: 100%;
-  height: 394px;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -342,8 +343,26 @@
 .why-about__video {
   max-width: 1030px;
   margin: 0 auto;
-  border-radius: 20px;
   overflow: hidden;
+}
+
+@media (min-width: 480.98px) {
+  .what-about__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 -10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .what-about__column {
+    padding: 0 10px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+  }
 }
 
 @media (min-width: 767.98px) {
@@ -354,21 +373,18 @@
   .intro-about__title {
     margin-bottom: 16px;
   }
-}
-
-@media (min-width: 991.98px) {
-  .what-about__row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 -10px;
-  }
 
   .what-about__column {
     padding: 0 10px;
     -webkit-box-flex: 0;
     -ms-flex: 0 1 33.333%;
     flex: 0 1 33.333%;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .what-about__item img {
+    height: 394px;
   }
 
   .sign-up-about__line {
@@ -397,6 +413,14 @@
   }
 
   .sign-up-about__button span span:last-child {
+    display: none;
+  }
+
+  .why-about__video {
+    border-radius: 20px;
+  }
+
+  .why-about__video_mobile {
     display: none;
   }
 }
@@ -470,6 +494,10 @@
 }
 
 @media (max-width: 991.98px) {
+  .what-about__item img {
+    height: auto;
+  }
+
   .what-about__item {
     margin-bottom: 24px;
   }
@@ -524,6 +552,10 @@
 
   .sign-up-about__button span span:first-child {
     display: none;
+  }
+
+  .why-about__video {
+    margin: 0 -16px;
   }
 }
 
@@ -622,6 +654,18 @@
   .sign-up-about {
     background: url("../../images/about/signup-adaptive.jpg") 0 0/cover no-repeat;
   }
+
+  .why-about__video {
+    display: none;
+  }
+
+  .why-about__video .video-js.vjs-16-9 {
+    padding-top: 89.25%;
+  }
+
+  .why-about__video_mobile {
+    display: block;
+  }
 }
 
 @media (max-width: 400.98px) {
@@ -633,5 +677,20 @@
 @media (max-width: 355.98px) {
   .values-about__label {
     font-size: 14px;
+  }
+}
+
+@media (min-width: 480.98px) and (max-width: 767.98px) {
+  .what-about__row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .what-about__column {
+    margin-bottom: 26px;
+  }
+
+  .what-about__column:last-child {
+    margin: 0;
   }
 }

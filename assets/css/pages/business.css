@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+
+.intro-business {
+  background: url("../../images/business/intro-bg.jpg") 0 0/cover no-repeat;
+}
+
+.intro-business__container {
+  min-height: 877px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 135px;
+  padding-bottom: 30px;
+}
+
+.intro-business__body {
+  text-align: center;
+}
+
+.intro-business__title {
+  color: #E4EAFF;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  /* 67.2px */
+  letter-spacing: 0.56px;
+  margin-bottom: 15px;
+  max-width: 530px;
+  font-size: 56px;
+}
+
+.intro-business__text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.16px;
+  color: #A8B7F0;
+  max-width: 494px;
+  margin: 0 auto 30px;
+}
+
+.intro-business__button {
+  min-height: 50px;
+  max-width: 225px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.16px;
+}
+
+.brands-business {
+  margin-bottom: 130px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E4EAFF)), #E4EAFF;
+  background: linear-gradient(180deg, #FFF 0%, #E4EAFF 100%), #E4EAFF;
+  padding: 30px 0;
+}
+
+.brands-business__title {
+  font-family: "Raleway";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.16px;
+  margin-bottom: 22px;
+  color: #181F3E;
+  text-align: center;
+}
+
+.brands-business__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 -30px;
+}
+
+.brands-business__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  padding: 0 30px;
+}
+
+.brands-business__item img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.advantages-business {
+  margin-bottom: 130px;
+}
+
+.advantages-business__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.advantages-business__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 20%;
+  flex: 0 1 20%;
+}
+
+.advantages-business__icon {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.advantages-business__icon img {
+  width: 127px;
+  height: 127px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.advantages-business__label {
+  text-align: center;
+  color: #181F3E;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.transformation-business__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.transformation-business__content {
+  max-width: 480px;
+}
+
+.transformation-business__title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  /* 48px */
+  letter-spacing: 0.4px;
+  margin-bottom: 15px;
+  color: #181F3E;
+}
+
+.transformation-business__text {
+  color: #181F3E;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 43px;
+  font-size: 16px;
+}
+
+.transformation-business__button {
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.transformation-business__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.transformation-business__image img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  height: auto;
+  max-width: 100%;
+}
+
+.form-business {
+  background: url("../../images/business/request-bg.jpg") 0 0/cover no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.form-business__title {
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  /* 48px */
+  letter-spacing: 0.4px;
+  margin-bottom: 12px;
+}
+
+.form-business__text {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.16px;
+  margin-bottom: 50px;
+}
+
+.form-business__main {
+  max-width: 730px;
+  margin: 0 auto;
+  padding: 60px;
+  border-radius: 20px;
+  background: #FFF;
+  -webkit-box-shadow: 0px 4px 26px 0px rgba(54, 64, 101, 0.14);
+  box-shadow: 0px 4px 26px 0px rgba(54, 64, 101, 0.14);
+}
+
+.form-business__line {
+  margin-bottom: 10px;
+}
+
+.form-business__input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-business__input:last-child {
+  margin: 0;
+}
+
+.form-business__label {
+  margin-bottom: 5px;
+  color: #000;
+  /* Body/Raleway/B0_Semi_bold_16 */
+  font-family: "Raleway";
+  display: inline-block;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.16px;
+}
+
+.form-business__submit {
+  width: 100%;
+  min-height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.form-business__agreement {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  color: #000;
+}
+
+.form-business__agreement a {
+  text-decoration: underline;
+  color: #4561D8;
+}
+
+@media (min-width: 480.98px) {
+  .transformation-business__button {
+    max-width: 225px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .transformation-business__body {
+    background: #F1F3FA;
+  }
+
+  .transformation-business__image {
+    min-width: 300px;
+  }
+
+  .form-business__line {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .form-business__line .form-business__input:first-child {
+    margin-right: 10px;
+  }
+
+  .form-business__line .form-business__input {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    width: 50%;
+  }
+
+  .form-business__line .form-business__input:last-child {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .transformation-business__body {
+    padding: 100px;
+  }
+}
+
+@media (max-width: 1272px) {
+  .intro-business__container {
+    min-height: calc(812px + 65 * ((100vw - 320px) / 952));
+  }
+
+  .intro-business__container {
+    padding-top: calc(91px + 44 * ((100vw - 320px) / 952));
+  }
+
+  .intro-business__title {
+    font-size: calc(36px + 20 * ((100vw - 320px) / 952));
+  }
+
+  .brands-business {
+    margin-bottom: calc(50px + 80 * ((100vw - 320px) / 952));
+  }
+
+  .advantages-business {
+    margin-bottom: calc(40px + 90 * ((100vw - 320px) / 952));
+  }
+
+  .transformation-business__text {
+    margin-bottom: calc(25px + 18 * ((100vw - 320px) / 952));
+  }
+
+  .transformation-business__text {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 952));
+  }
+
+  .form-business {
+    padding-top: calc(50px + 50 * ((100vw - 320px) / 952));
+  }
+
+  .form-business {
+    padding-bottom: calc(50px + 50 * ((100vw - 320px) / 952));
+  }
+
+  .form-business__text {
+    margin-bottom: calc(25px + 25 * ((100vw - 320px) / 952));
+  }
+}
+
+@media (max-width: 991.98px) {
+  .advantages-business__items {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .advantages-business__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    margin-bottom: 43px;
+  }
+
+  .transformation-business__image {
+    padding: 18px 49px 10px 30px;
+    background: #F1F3FA;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .brands-business__items {
+    margin: 0 -10px;
+    min-height: 47px;
+    background: #F3F9FF;
+  }
+
+  .brands-business__item {
+    padding: 0 10px;
+  }
+
+  .advantages-business__icon {
+    margin-bottom: 22px;
+  }
+
+  .advantages-business__icon img {
+    width: 93px;
+    height: 93px;
+  }
+
+  .advantages-business__label {
+    font-size: 17px;
+  }
+
+  .transformation-business__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #E4EAFF;
+  }
+
+  .transformation-business__body {
+    border-radius: 15px;
+  }
+
+  .transformation-business__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0px 15px 30px;
+  }
+
+  .transformation-business__title {
+    font-size: 24px;
+  }
+
+  .transformation-business__title {
+    text-align: center;
+  }
+
+  .transformation-business__text {
+    text-align: center;
+  }
+
+  .transformation-business__image {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .form-business__title {
+    font-size: 24px;
+  }
+
+  .form-business__main {
+    padding: 40px 25px;
+  }
+}
+
+@media (max-width: 480.98px) {
+  .intro-business {
+    background: url("../../images/business/intro-bg-adaptive.jpg") 0 0/cover no-repeat;
+  }
+
+  .intro-business__button {
+    max-width: 100%;
+  }
+
+  .transformation-business__button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .form-business {
+    background: url("../../images/business/request-bg-adaptive.jpg") 0 0/cover no-repeat;
+  }
+}
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .transformation-business__body {
+    padding: 25px;
+  }
+}
+
+@media (any-hover: hover) {
+  .form-business__agreement a:hover {
+    text-decoration: none;
+  }
+}
