@@ -487,6 +487,270 @@ body {
   margin-bottom: 0 !important;
 }
 
+.plan-course {
+  background: url("../../images/pricing-plan.jpg") center center/cover no-repeat;
+}
+
+.plan-course__container {
+  position: relative;
+  z-index: 2;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.plan-course__title {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 120%;
+}
+
+.plan-course__subtitle {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.plan-course__slider {
+  overflow: visible !important;
+  margin-top: 69px;
+}
+
+.plan-course__slider .swiper-slide {
+  height: auto;
+}
+
+.advantages-plan-course {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantages-plan-course__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.advantages-plan-course__icon {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 48px;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+  border-radius: 50%;
+  background: #4561D8;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.advantages-plan-course__icon img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.advantages-plan-course__label {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.16px;
+  color: #fff;
+}
+
+.item-plan-course {
+  background: url("../../images/pricing-plan-block.jpg") 0 0/cover no-repeat;
+  border-radius: 16px;
+  padding: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 498px;
+  position: relative;
+  -webkit-box-shadow: 0px 4px 94px 0px rgba(158, 158, 158, 0.25);
+  box-shadow: 0px 4px 94px 0px rgba(158, 158, 158, 0.25);
+}
+
+.item-plan-course__label {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+  color: #fff;
+  margin-bottom: 22px;
+}
+
+.item-plan-course__old-price {
+  color: #A7A0DF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  margin-bottom: 4px;
+  text-decoration: line-through;
+}
+
+.item-plan-course__price {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: 0.48px;
+  margin-bottom: 8px;
+}
+
+.item-plan-course__per {
+  margin-bottom: 33px;
+  color: #CBC6EC;
+  letter-spacing: 0.16px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.item-plan-course__action {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.item-plan-course__button {
+  min-height: 48px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 304px;
+  width: 100%;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.16px;
+  border-radius: 10px;
+  color: #181F3E;
+  margin-bottom: 16px;
+}
+
+.item-plan-course__button:last-child {
+  margin: 0;
+}
+
+.item-plan-course__top {
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(143deg, #6135CA 0%, #4561D8 100%);
+}
+
+.item-plan-course__top img {
+  width: 16px;
+  height: 16px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+.item-plan-course__top span {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.16px;
+}
+
+.item-plan-course__save-up {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.16px;
+  color: #fff;
+  position: absolute;
+  bottom: -36px;
+  left: 50%;
+  white-space: nowrap;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.item-plan-course_top {
+  background: #fff;
+}
+
+.item-plan-course_top .item-plan-course__old-price {
+  color: #8B8F9E;
+}
+
+.item-plan-course_top .item-plan-course__label {
+  color: #1A1A1A;
+}
+
+.item-plan-course_top .item-plan-course__price {
+  color: #191919;
+}
+
+.item-plan-course_top .item-plan-course__per {
+  color: #181F3E;
+}
+
+.item-plan-course_top .item-plan-course__button {
+  background: linear-gradient(143deg, #6135CA 0%, #4561D8 100%);
+  color: #fff;
+}
+
+.item-plan-course_top .item-plan-course__save-up {
+  color: #4561D8;
+}
+
 @media (min-width: 767.98px) {
   .about-course {
     border-radius: 10px;
@@ -657,6 +921,29 @@ body {
   .item-steps-course {
     border-radius: 10px;
   }
+
+  .plan-course__slider .swiper-wrapper {
+    -webkit-transform: none !important;
+    transform: none !important;
+  }
+
+  .plan-course__pagination {
+    display: none;
+  }
+
+  .advantages-plan-course {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 -18px;
+  }
+
+  .advantages-plan-course__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 256px;
+    flex: 0 0 256px;
+    padding: 0 18px;
+  }
 }
 
 @media (min-width: 1100.98px) {
@@ -672,6 +959,18 @@ body {
 
   .trailer-course {
     padding: calc(24px + 10 * ((100vw - 320px) / 952));
+  }
+
+  .plan-course__container {
+    padding-top: calc(34px + 46 * ((100vw - 320px) / 952));
+  }
+
+  .plan-course__container {
+    padding-bottom: calc(34px + 46 * ((100vw - 320px) / 952));
+  }
+
+  .plan-course__slider {
+    margin-top: calc(34px + 35 * ((100vw - 320px) / 952));
   }
 }
 
@@ -835,6 +1134,57 @@ body {
   .course__slider .swiper-build {
     overflow: visible !important;
   }
+
+  .plan-course__subtitle {
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  .plan-course__pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 19px;
+  }
+
+  .plan-course__pagination .swiper-pagination-bullet {
+    background: #DFE4F7 !important;
+    border-radius: 50%;
+    margin: 0 3.5px;
+    width: 12px;
+    height: 12px;
+    opacity: 1 !important;
+  }
+
+  .plan-course__pagination .swiper-pagination-bullet-active {
+    background: #4C66D4 !important;
+  }
+
+  .advantages-plan-course {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .advantages-plan-course__item {
+    width: 190px;
+    margin-bottom: 23px;
+  }
+
+  .advantages-plan-course__item:last-child {
+    margin: 0;
+  }
+
+  .advantages-plan-course__label {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 991.98px) and (max-width: 1272px) {
@@ -958,5 +1308,37 @@ body {
     padding-bottom: 45px;
     padding-top: 16px;
     border: 1px solid #EDEDED;
+  }
+
+  .plan-course__title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .item-plan-course__old-price {
+    font-weight: 500;
+  }
+
+  .footer {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .footer::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: -100px;
+    width: 400px;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    height: 400px;
+    background: url("../../images/plan/shadow.png") 0 0/contain no-repeat;
+  }
+}
+
+@media (max-width: 480.98px) {
+  .plan-course {
+    background: url("../../images/pricing-plan-adaptive.jpg") center center/cover no-repeat;
   }
 }

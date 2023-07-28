@@ -220,7 +220,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+    if (document.querySelector('.plan-course__slider')) {
+        new Swiper('.plan-course__slider', {
+            speed: 700,
+            spaceBetween: 20,
+            loop: true,
+            slidesPerView: 1,
+            breakpoints: {
+                991.98: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    loop: false
+                },
+                767.98: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    loop: true,
+                },
+            },
+            pagination: {
+                el: '.plan-course__pagination',
+                type: 'bullets',
+                clickable: true
+            },
+        })
 
+    }
 
     const baseSliders = document.querySelectorAll('.base-slider__body')
 
